@@ -1,0 +1,5 @@
+target	reference	reference_length_bp	callable_pct	mean_depth_x	masked_N	variants	status
+HAstV1_A	LC694990.1	6861	98.92	397.90	74	34	near-complete consensus
+HAstV1_B	LC694997.1	6743	47.84	21.58	3517	16	partial consensus
+HAstV3	MN444721.1	6790	99.96	255.60	3	15	near-complete consensus
+RVA_segment3	OR890193.1	2591	83.64	32.42	424	4	partial high-confidence segment consensus

@@ -1,0 +1,29 @@
+Project: wastewater-capture-viromics
+
+MEGAHIT:
+MEGAHIT v1.2.9
+
+Bowtie2:
+/usr/bin/bowtie2-align-s version 2.4.4
+
+samtools:
+samtools 1.13
+
+bcftools:
+bcftools 1.13
+
+MAFFT:
+v7.490 (2021/Oct/30)
+
+FastTree:
+Usage for FastTree version 2.1.11 Double precision (No SSE3):
+  FastTree protein_alignment > tree
+
+BLAST:
+blastn: 2.12.0+
+
+geNomad:
+1.12.0 (Docker)
+
+CD-HIT-DUP:
+locally compiled CD-HIT aux tool

@@ -1,0 +1,59 @@
+# Raw sequencing data
+raw/
+data/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+
+# Alignment files
+*.bam
+*.bai
+*.sam
+*.cram
+*.crai
+
+# Bowtie2 indices
+*.bt2
+*.bt2l
+
+# Large/intermediate analysis directories
+results/assembly/
+results/genomad/
+results/reference_mapping/
+results/consensus/
+results/host_removal_dedup/
+results/dedup/
+results/target_readback/
+qc/
+
+# Databases
+databases/
+database/
+*.dmnd
+
+# Logs
+logs/
+*.log
+nohup.out
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Compressed archives
+*.tar
+*.tar.gz
+*.zip

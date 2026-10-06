@@ -1,0 +1,7 @@
+sample	assay	best_forward	forward_mm	reverse_mm	probe_mm	primer_3prime_mm
+HAstV1_A	BCCDC_classic_HAstV	Ast-F	1	0	1	0
+HAstV1_A	Classic_HAstV_Japan	HuAstVf2240	1	0	0	0
+HAstV1_B	BCCDC_classic_HAstV	Ast-F	1	0	0	0
+HAstV1_B	Classic_HAstV_Japan	HuAstVf2240	0	0	0	0
+HAstV3	BCCDC_classic_HAstV	Ast-F	1	0	2	0
+HAstV3	Classic_HAstV_Japan	HuAstVf2140	0	1	0	0

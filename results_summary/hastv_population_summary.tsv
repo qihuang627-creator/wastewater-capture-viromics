@@ -1,0 +1,8 @@
+comparison	value
+HAstV1_A_vs_HAstV1_B_ORF2_comparable_sites	1997
+HAstV1_A_vs_HAstV1_B_ORF2_matches	1802
+HAstV1_A_vs_HAstV1_B_ORF2_identity_pct	90.24
+HAstV1_A_ORF2_vs_Oxford_HAstV1_identity_pct	94.88
+HAstV1_B_ORF2_vs_Oxford_HAstV1_identity_pct	91.54
+HAstV3_ORF2_vs_Oxford_HAstV3_identity_pct	91.32
+HAstV3_ORF2_vs_MN444721_identity_pct	99.75

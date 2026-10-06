@@ -1,0 +1,14 @@
+metric	value
+raw_read_pairs	199495
+putative_PCR_deduplicated_pairs	198528
+QC_passed_pairs	188573
+nonhuman_pairs	188573
+human_alignment_rate_pct	0.00
+assembly_contigs_ge500bp	1597
+assembly_total_bp	1183881
+assembly_max_contig_bp	42702
+assembly_N50_bp	673
+assembly_contigs_ge1000bp	139
+geNomad_viral_contigs_ge1000bp	54
+strict_GastroCap_target_contigs	18
+order_level_Picornavirales_candidates	1
