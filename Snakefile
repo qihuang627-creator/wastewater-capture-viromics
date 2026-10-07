@@ -73,8 +73,13 @@ rule preprocess:
         ),
     threads:
         config["threads"]["preprocess"]
+    log:
+        "logs/snakemake/preprocess/{sample}.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         THREADS={threads} \
         bash scripts/multisample/02_preprocess_one.sh \
         {wildcards.sample}
@@ -102,8 +107,13 @@ rule assembly:
         ),
     threads:
         config["threads"]["assembly"]
+    log:
+        "logs/snakemake/assembly/{sample}.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         THREADS={threads} \
         bash scripts/multisample/04_assembly_one.sh \
         {wildcards.sample}
@@ -124,8 +134,13 @@ rule genomad:
         ),
     threads:
         config["threads"]["genomad"]
+    log:
+        "logs/snakemake/genomad/{sample}.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         THREADS={threads} \
         bash scripts/multisample/06_genomad_one.sh \
         {wildcards.sample}
@@ -152,8 +167,13 @@ rule strict_targets:
             "results/multisample/target_candidates/"
             "{sample}/{sample}_strict_target_candidates.tsv"
         ),
+    log:
+        "logs/snakemake/strict_targets/{sample}.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/08_extract_strict_targets.py \
         {wildcards.sample}
@@ -201,8 +221,13 @@ rule target_readback:
         ),
     threads:
         config["threads"]["readback"]
+    log:
+        "logs/snakemake/target_readback/{sample}.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         THREADS={threads} \
         bash scripts/multisample/09_target_readback_one.sh \
         {wildcards.sample}
@@ -237,8 +262,13 @@ rule summarize_target_readback:
             "results_summary/multisample/"
             "supported_target_family_matrix.tsv"
         ),
+    log:
+        "logs/snakemake/summarize_target_readback.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/10_summarize_target_readback.py
         """
@@ -256,8 +286,13 @@ rule prepare_supported_pool:
             "results_summary/multisample/"
             "supported_contig_manifest.tsv"
         ),
+    log:
+        "logs/snakemake/prepare_supported_pool.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/11_prepare_supported_pool.py
         """
@@ -278,8 +313,13 @@ rule cluster_supported_targets:
         ),
     threads:
         config["threads"]["clustering"]
+    log:
+        "logs/snakemake/cluster_supported_targets.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         THREADS={threads} \
         bash scripts/multisample/12_cluster_supported_targets.sh
         """
@@ -297,8 +337,13 @@ rule summarize_clusters:
     output:
         "results_summary/multisample/"
         "supported_sequence_clusters.tsv",
+    log:
+        "logs/snakemake/summarize_clusters.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/13_summarize_clusters.py
         """
@@ -316,8 +361,13 @@ rule prepare_all96_representatives:
     output:
         "results/multisample/clustering/"
         "all96_cluster_representatives.fa",
+    log:
+        "logs/snakemake/prepare_all96_representatives.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/21_prepare_all_cluster_representatives.py
         """
@@ -339,10 +389,16 @@ rule megablast_all96:
     params:
         db=NT_DB,
         max_targets=MAX_TARGET_SEQS,
+        outfmt=BLAST_OUTFMT,
     threads:
         config["threads"]["blast"]
+    log:
+        "logs/snakemake/megablast_all96.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         mkdir -p \
           results/multisample/blast/local_nt_viruses_all96
 
@@ -351,7 +407,7 @@ rule megablast_all96:
           -query {input.fasta} \
           -db {params.db} \
           -out {output} \
-          -outfmt '{BLAST_OUTFMT}' \
+          -outfmt '{params.outfmt}' \
           -max_target_seqs {params.max_targets} \
           -num_threads {threads}
         """
@@ -370,8 +426,13 @@ rule summarize_megablast:
     output:
         "results_summary/multisample/"
         "all96_ntviruses_annotation.tsv",
+    log:
+        "logs/snakemake/summarize_megablast.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/22_summarize_all96_megablast.py
         """
@@ -390,8 +451,13 @@ rule extract_nonstrong_queries:
     output:
         "results/multisample/blast/"
         "local_nt_viruses_all96/nonstrong10.fa",
+    log:
+        "logs/snakemake/extract_nonstrong_queries.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/22b_extract_nonstrong_queries.py
         """
@@ -409,10 +475,16 @@ rule sensitive_blastn:
     params:
         db=NT_DB,
         max_targets=MAX_TARGET_SEQS,
+        outfmt=BLAST_OUTFMT,
     threads:
         config["threads"]["blast"]
+    log:
+        "logs/snakemake/sensitive_blastn.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         if grep -q '^>' {input.fasta}; then
 
             blastn \
@@ -420,7 +492,7 @@ rule sensitive_blastn:
               -query {input.fasta} \
               -db {params.db} \
               -out {output} \
-              -outfmt '{BLAST_OUTFMT}' \
+              -outfmt '{params.outfmt}' \
               -max_target_seqs {params.max_targets} \
               -num_threads {threads}
 
@@ -443,8 +515,13 @@ rule merge_all96_annotation:
     output:
         "results_summary/multisample/"
         "all96_annotation_master.tsv",
+    log:
+        "logs/snakemake/merge_all96_annotation.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/23_merge_all96_annotation.py
         """
@@ -475,8 +552,13 @@ rule build_all96_reference:
             "refs/multisample/all96/bowtie2/"
             "all96.rev.2.bt2"
         ),
+    log:
+        "logs/snakemake/build_all96_reference.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         mkdir -p refs/multisample/all96/bowtie2
 
         cp {input} {output.fasta}
@@ -539,8 +621,13 @@ rule all96_mapping:
         ),
     threads:
         config["threads"]["all96_mapping"]
+    log:
+        "logs/snakemake/all96_mapping/{sample}.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         THREADS={threads} \
         bash scripts/multisample/24_all96_mapping_one.sh \
         {wildcards.sample}
@@ -583,8 +670,13 @@ rule integrate_all96_evidence:
             "results_summary/multisample/"
             "all96_mapping_recovered.tsv"
         ),
+    log:
+        "logs/snakemake/integrate_all96_evidence.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/26_integrate_all96_evidence.py
         """
@@ -597,8 +689,13 @@ rule reconcile_taxonomy:
     output:
         "results_summary/multisample/"
         "all96_annotation_reconciled.tsv",
+    log:
+        "logs/snakemake/reconcile_taxonomy.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/27_reconcile_all96_taxonomy.py
         """
@@ -611,8 +708,13 @@ rule biological_grouping:
     output:
         "results_summary/multisample/"
         "all96_biological_grouping.tsv",
+    log:
+        "logs/snakemake/biological_grouping.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/28_build_biological_grouping.py
         """
@@ -641,8 +743,13 @@ rule group_level_evidence:
             "results_summary/multisample/"
             "biological_group_sample_summary.tsv"
         ),
+    log:
+        "logs/snakemake/group_level_evidence.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/29_build_group_level_evidence.py
         """
@@ -655,8 +762,13 @@ rule portfolio_matrix:
     output:
         "results_summary/multisample/"
         "portfolio_enteric_group_matrix.tsv",
+    log:
+        "logs/snakemake/portfolio_matrix.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         python3 \
         scripts/multisample/31_build_portfolio_matrix.py
         """
@@ -677,8 +789,13 @@ rule portfolio_heatmap:
         ),
     params:
         python=PLOT_PYTHON,
+    log:
+        "logs/snakemake/portfolio_heatmap.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         MPLBACKEND=Agg {params.python} \
         scripts/multisample/32_plot_portfolio_heatmap.py
         """
@@ -704,8 +821,13 @@ rule full_biological_heatmap:
         ),
     params:
         python=PLOT_PYTHON,
+    log:
+        "logs/snakemake/full_biological_heatmap.log",
     shell:
         r"""
+        mkdir -p "$(dirname {log})"
+        exec > {log} 2>&1
+
         MPLBACKEND=Agg {params.python} \
         scripts/multisample/30_plot_biological_group_heatmap.py
         """
