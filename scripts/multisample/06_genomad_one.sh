@@ -5,11 +5,18 @@ RUN="${1:?Usage: $0 RUN}"
 THREADS="${THREADS:-8}"
 
 IMAGE="community.wave.seqera.io/library/genomad:1.12.0--27836e6e665e84b5"
-DB="${HOME}/QI/wastewater-shotgun/databases/genomad/genomad_db"
+DB="${GENOMAD_DB:-databases/genomad/genomad_db}"
 
 INPUT="results/per_sample/viral_screen/${RUN}_contigs_1kb.fa"
 OUTDIR="results/per_sample/genomad/${RUN}"
 LOG="logs/multisample/${RUN}_genomad.log"
+
+if [[ ! -d "${DB}" ]]; then
+    echo "ERROR: geNomad database directory not found: ${DB}" >&2
+    exit 1
+fi
+
+DB="$(cd "${DB}" && pwd)"
 
 mkdir -p "${OUTDIR}" logs/multisample
 

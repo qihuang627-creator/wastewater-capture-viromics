@@ -9,7 +9,15 @@ with open(SAMPLE_SHEET) as f:
     reader = csv.DictReader(f, delimiter="\t")
     SAMPLES = [row["sample"] for row in reader]
 
-NT_DB = config["paths"]["nt_viruses_db"]
+HUMAN_INDEX = os.environ.get(
+    "HUMAN_INDEX", config["paths"]["human_index"]
+)
+GENOMAD_DB = os.environ.get(
+    "GENOMAD_DB", config["paths"]["genomad_db"]
+)
+NT_DB = os.environ.get(
+    "NT_VIRUSES_DB", config["paths"]["nt_viruses_db"]
+)
 MAX_TARGET_SEQS = config["blast"]["max_target_seqs"]
 
 PLOT_PYTHON = os.environ.get("PLOT_PYTHON", "python3")
@@ -71,6 +79,8 @@ rule preprocess:
             "results/per_sample/host_removal/"
             "{sample}_R2.nonhuman.fastq.gz"
         ),
+    params:
+        human_index=HUMAN_INDEX,
     threads:
         config["threads"]["preprocess"]
     log:
@@ -81,6 +91,7 @@ rule preprocess:
         exec > {log} 2>&1
 
         THREADS={threads} \
+        HUMAN_INDEX="{params.human_index}" \
         bash scripts/multisample/02_preprocess_one.sh \
         {wildcards.sample}
         """
@@ -132,6 +143,8 @@ rule genomad:
             "{sample}_contigs_1kb_summary/"
             "{sample}_contigs_1kb_virus_summary.tsv"
         ),
+    params:
+        db=GENOMAD_DB,
     threads:
         config["threads"]["genomad"]
     log:
@@ -142,6 +155,7 @@ rule genomad:
         exec > {log} 2>&1
 
         THREADS={threads} \
+        GENOMAD_DB="{params.db}" \
         bash scripts/multisample/06_genomad_one.sh \
         {wildcards.sample}
         """

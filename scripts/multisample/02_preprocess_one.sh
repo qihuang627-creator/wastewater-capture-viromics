@@ -7,9 +7,9 @@ THREADS="${THREADS:-8}"
 RAW1="raw/${RUN}_1.fastq.gz"
 RAW2="raw/${RUN}_2.fastq.gz"
 
-CDHIT="${HOME}/bin/cd-hit-dup"
+CDHIT_DUP="${CDHIT_DUP:-cd-hit-dup}"
 FASTP="${FASTP:-fastp}"
-HUMAN_INDEX="${HOME}/QI/wastewater-shotgun/databases/human_GRCh38/GRCh38"
+HUMAN_INDEX="${HUMAN_INDEX:-databases/human_GRCh38/GRCh38}"
 
 DEDUPDIR="results/per_sample/dedup/u150"
 QCDIR="qc/per_sample/clean"
@@ -32,8 +32,8 @@ do
     fi
 done
 
-if [[ ! -x "${CDHIT}" ]]; then
-    echo "ERROR: cd-hit-dup not found at ${CDHIT}" >&2
+if ! command -v "${CDHIT_DUP}" >/dev/null 2>&1; then
+    echo "ERROR: cd-hit-dup not found: ${CDHIT_DUP}" >&2
     exit 1
 fi
 
@@ -80,7 +80,7 @@ else
     gzip -dc "${RAW1}" > "${TMP}/R1.fastq"
     gzip -dc "${RAW2}" > "${TMP}/R2.fastq"
 
-    "${CDHIT}" \
+    "${CDHIT_DUP}" \
       -i "${TMP}/R1.fastq" \
       -i2 "${TMP}/R2.fastq" \
       -o "${TMP}/R1.dedup.fastq" \

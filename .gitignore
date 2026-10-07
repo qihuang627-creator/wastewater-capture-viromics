@@ -76,3 +76,4 @@ env/
 qc/
 .snakemake/
 Snakefile*.bak
+*.bundle

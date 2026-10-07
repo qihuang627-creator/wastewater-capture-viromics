@@ -4,7 +4,7 @@ set -euo pipefail
 RUN="${1:-ERR14788990}"
 THREADS="${THREADS:-8}"
 
-DB="${HOME}/QI/wastewater-shotgun/databases/human_GRCh38/GRCh38"
+DB="${HUMAN_INDEX:-databases/human_GRCh38/GRCh38}"
 
 R1="qc/per_sample/clean/${RUN}_R1.clean.fastq.gz"
 R2="qc/per_sample/clean/${RUN}_R2.clean.fastq.gz"

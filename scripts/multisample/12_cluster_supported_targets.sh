@@ -8,8 +8,8 @@ CDHIT_EST="${CDHIT_EST:-cd-hit-est}"
 INDIR="results/multisample/clustering/input"
 OUTDIR="results/multisample/clustering/clusters"
 
-if [[ ! -x "${CDHIT_EST}" ]]; then
-    echo "ERROR: cd-hit-est not found at ${CDHIT_EST}" >&2
+if ! command -v "${CDHIT_EST}" >/dev/null 2>&1; then
+    echo "ERROR: cd-hit-est not found: ${CDHIT_EST}" >&2
     exit 1
 fi
 

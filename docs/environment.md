@@ -76,7 +76,24 @@ The workflow requires local access to:
 - the geNomad database;
 - the NCBI `nt_viruses` BLAST database.
 
-Database locations should be configured locally and should not be committed to the repository.
+Database locations are configured in `config/multisample/workflow.yaml`:
+
+```yaml
+paths:
+  human_index: databases/human_GRCh38/GRCh38
+  genomad_db: databases/genomad/genomad_db
+  nt_viruses_db: databases/nt_viruses/nt_viruses
+```
+
+These paths may be edited to point to databases installed elsewhere on the local system. Large databases themselves should not be committed to the repository.
+
+The three database locations can also be overridden without editing the configuration file:
+
+```bash
+export HUMAN_INDEX=/path/to/GRCh38
+export GENOMAD_DB=/path/to/genomad_db
+export NT_VIRUSES_DB=/path/to/nt_viruses
+```
 
 ## Reproducibility
 
@@ -99,6 +116,7 @@ Command-line tools should normally be available on `PATH`.
 For installations where selected tools are located outside `PATH`, the following environment variables can be used to override executable locations:
 
 ```bash
+export CDHIT_DUP=/path/to/cd-hit-dup
 export FASTP=/path/to/fastp
 export MEGAHIT=/path/to/megahit
 export CDHIT_EST=/path/to/cd-hit-est

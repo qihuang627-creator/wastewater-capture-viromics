@@ -1,6 +1,8 @@
 samples: config/multisample/samples.tsv
 
 paths:
+  human_index: databases/human_GRCh38/GRCh38
+  genomad_db: databases/genomad/genomad_db
   nt_viruses_db: databases/nt_viruses/nt_viruses
 
 threads:
