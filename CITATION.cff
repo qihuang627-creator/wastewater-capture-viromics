@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this workflow or code, please cite this repository."
+title: "Wastewater Hybrid-Capture Viromics"
+type: software
+authors:
+  - family-names: "Huang"
+    given-names: "Qi"
+repository-code: "https://github.com/qihuang627-creator/wastewater-capture-viromics"
+license: "MIT"
+keywords:
+  - wastewater viromics
+  - hybrid capture
+  - viral metagenomics
+  - wastewater surveillance
+  - genome reconstruction
+  - Snakemake
+  - viral genomics
+abstract: >-
+  A reproducible computational workflow for hybrid-capture wastewater
+  viromics integrating de novo viral discovery, assembly-supported detection,
+  competitive mapping, sequence annotation, multisample evidence integration,
+  genome reconstruction, phylogenetic analysis, and diagnostic
+  oligonucleotide mismatch surveillance.
