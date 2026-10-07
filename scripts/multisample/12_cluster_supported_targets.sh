@@ -3,7 +3,7 @@ set -euo pipefail
 
 THREADS="${THREADS:-8}"
 
-CDHIT_EST="/media/desk16/iy19302/miniconda3/envs/capture_dedup/bin/cd-hit-est"
+CDHIT_EST="${CDHIT_EST:-cd-hit-est}"
 
 INDIR="results/multisample/clustering/input"
 OUTDIR="results/multisample/clustering/clusters"

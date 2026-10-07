@@ -8,7 +8,7 @@ RAW1="raw/${RUN}_1.fastq.gz"
 RAW2="raw/${RUN}_2.fastq.gz"
 
 CDHIT="${HOME}/bin/cd-hit-dup"
-FASTP="/media/desk16/iy19302/miniconda3/envs/metagenome/bin/fastp"
+FASTP="${FASTP:-fastp}"
 HUMAN_INDEX="${HOME}/QI/wastewater-shotgun/databases/human_GRCh38/GRCh38"
 
 DEDUPDIR="results/per_sample/dedup/u150"

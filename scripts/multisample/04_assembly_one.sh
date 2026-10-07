@@ -4,7 +4,7 @@ set -euo pipefail
 RUN="${1:?Usage: $0 RUN}"
 THREADS="${THREADS:-8}"
 
-MEGAHIT="/media/desk16/iy19302/miniconda3/envs/metagenome/bin/megahit"
+MEGAHIT="${MEGAHIT:-megahit}"
 
 R1="results/per_sample/host_removal/${RUN}_R1.nonhuman.fastq.gz"
 R2="results/per_sample/host_removal/${RUN}_R2.nonhuman.fastq.gz"

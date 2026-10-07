@@ -91,3 +91,18 @@ Because several external tools are provided by system installations, existing Co
 Validated software versions are documented in:
 
 `docs/software_versions.md`
+
+## Executable discovery
+
+Command-line tools should normally be available on `PATH`.
+
+For installations where selected tools are located outside `PATH`, the following environment variables can be used to override executable locations:
+
+```bash
+export FASTP=/path/to/fastp
+export MEGAHIT=/path/to/megahit
+export CDHIT_EST=/path/to/cd-hit-est
+export PLOT_PYTHON=/path/to/python
+```
+
+This avoids embedding machine-specific absolute paths in the workflow.
