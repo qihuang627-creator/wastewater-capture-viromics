@@ -1,0 +1,16 @@
+samples: config/multisample/samples.tsv
+
+paths:
+  nt_viruses_db: databases/nt_viruses/nt_viruses
+
+threads:
+  preprocess: 8
+  assembly: 8
+  genomad: 8
+  readback: 8
+  clustering: 8
+  blast: 8
+  all96_mapping: 8
+
+blast:
+  max_target_seqs: 25

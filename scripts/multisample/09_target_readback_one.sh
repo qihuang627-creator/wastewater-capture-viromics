@@ -20,8 +20,12 @@ IDXSTATS="${OUT}/${RUN}_idxstats.tsv"
 DEPTH="${OUT}/${RUN}_depth.tsv"
 SUMMARY="${OUT}/${RUN}_target_support.tsv"
 
-if [[ -s "${SUMMARY}" ]]; then
-    echo "Existing support table found — skipping ${RUN}"
+if [[ -s "${SUMMARY}" \
+   && -s "${DEPTH}" \
+   && -s "${IDXSTATS}" \
+   && -s "${BAM}" \
+   && -s "${BAM}.bai" ]]; then
+    echo "Existing complete target read-back outputs found — skipping ${RUN}"
     exit 0
 fi
 
