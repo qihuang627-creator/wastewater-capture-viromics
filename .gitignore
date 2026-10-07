@@ -74,3 +74,5 @@ env/
 
 # QC intermediates and reports
 qc/
+.snakemake/
+Snakefile*.bak
