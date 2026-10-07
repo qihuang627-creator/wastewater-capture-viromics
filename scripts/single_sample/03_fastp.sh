@@ -3,6 +3,7 @@ set -euo pipefail
 
 RUN="${1:-ERR14788990}"
 THREADS="${THREADS:-4}"
+FASTP="${FASTP:-fastp}"
 
 mkdir -p qc/per_sample/clean logs
 
@@ -19,7 +20,7 @@ R2="results/per_sample/dedup/u150/${RUN}_R2.dedup.fastq.gz"
     exit 1
 }
 
-conda run -n wwshotgun fastp \
+"${FASTP}" \
   -i "${R1}" \
   -I "${R2}" \
   -o "qc/per_sample/clean/${RUN}_R1.clean.fastq.gz" \

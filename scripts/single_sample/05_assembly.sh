@@ -3,6 +3,7 @@ set -euo pipefail
 
 RUN="${1:-ERR14788990}"
 THREADS="${THREADS:-8}"
+MEGAHIT="${MEGAHIT:-megahit}"
 
 R1="results/per_sample/host_removal/${RUN}_R1.nonhuman.fastq.gz"
 R2="results/per_sample/host_removal/${RUN}_R2.nonhuman.fastq.gz"
@@ -14,7 +15,7 @@ mkdir -p results/per_sample/assembly logs
 
 rm -rf "${OUTDIR}"
 
-conda run -n metagenome megahit \
+"${MEGAHIT}" \
   -1 "${R1}" \
   -2 "${R2}" \
   -o "${OUTDIR}" \

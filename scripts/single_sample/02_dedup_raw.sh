@@ -4,7 +4,7 @@ set -euo pipefail
 RUN="${1:-ERR14788990}"
 PREFIX="${2:-150}"
 
-CDHIT_DUP="${HOME}/bin/cd-hit-dup"
+CDHIT_DUP="${CDHIT_DUP:-cd-hit-dup}"
 
 R1="raw/${RUN}_1.fastq.gz"
 R2="raw/${RUN}_2.fastq.gz"
