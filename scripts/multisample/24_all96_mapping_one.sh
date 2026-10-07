@@ -20,8 +20,8 @@ DEPTH="${OUTDIR}/${RUN}_all96.mapq20.depth.tsv"
 FRAGS="${OUTDIR}/${RUN}_all96.mapq20.fragments.tsv"
 SUMMARY="${OUTDIR}/${RUN}_all96_support.tsv"
 
-if [[ -s "${SUMMARY}" ]]; then
-    echo "Existing summary found — skipping ${RUN}"
+if [[ -s "${SUMMARY}"    && -s "${DEPTH}"    && -s "${FRAGS}"    && -s "${BAM}"    && -s "${BAM}.bai" ]]; then
+    echo "Existing complete all96 mapping outputs found — skipping ${RUN}"
     exit 0
 fi
 

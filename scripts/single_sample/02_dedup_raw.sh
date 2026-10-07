@@ -15,10 +15,10 @@ LOG="logs/${RUN}_cdhitdup_u${PREFIX}.log"
 
 mkdir -p "${OUTDIR}" "${TMPDIR}" logs
 
-[[ -x "${CDHIT_DUP}" ]] || {
-    echo "ERROR: cd-hit-dup not found at ${CDHIT_DUP}" >&2
+if ! command -v "${CDHIT_DUP}" >/dev/null 2>&1; then
+    echo "ERROR: cd-hit-dup not found: ${CDHIT_DUP}" >&2
     exit 1
-}
+fi
 
 [[ -f "${R1}" ]] || {
     echo "ERROR: missing ${R1}" >&2

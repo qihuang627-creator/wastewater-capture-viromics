@@ -80,4 +80,8 @@ echo
 echo "=== Reference panel complete ==="
 echo "Sequences: $(grep -c '^>' "${COMBINED}")"
 
-column -t "${SUMMARY}"
+if command -v column >/dev/null 2>&1; then
+    column -t "${SUMMARY}"
+else
+    cat "${SUMMARY}"
+fi

@@ -242,4 +242,8 @@ echo
 echo "=========================================="
 echo "Completed: ${RUN}"
 echo "=========================================="
-column -t "${SUMMARY}"
+if command -v column >/dev/null 2>&1; then
+    column -t "${SUMMARY}"
+else
+    cat "${SUMMARY}"
+fi
