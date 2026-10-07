@@ -1,0 +1,15 @@
+reference_id	accession	target
+HAstV1_A	LC694990.1	Human_astrovirus_1
+HAstV1_B	LC694997.1	Human_astrovirus_1
+HAstV2	KF039910.1	Human_astrovirus_2
+HAstV3	MN444721.1	Human_astrovirus_3
+HAstV4	PV189388.1	Human_astrovirus_4
+HAstV5	MN433706.1	Human_astrovirus_5
+HAstV8	MK059956.1	Human_astrovirus_8
+SaV_GI2	LC816474.1	Sapovirus_GI2
+RVA_seg1	LC514470.1	Rotavirus_A_segment_1
+RVA_seg3	OR890193.1	Rotavirus_A_segment_3
+HBoV2	FJ948860.1	Human_bocavirus_2
+HBoV3	OP255991.1	Human_bocavirus_3
+Rodent_BoV	KY927875.1	Rodent_bocavirus
+Porcine_BoV	MF085373.1	Porcine_bocavirus

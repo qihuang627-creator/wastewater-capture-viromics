@@ -1,0 +1,2 @@
+sample	raw_pairs	dedup_pairs	qc_pairs	nonhuman_pairs	dedup_removed_pct	qc_retained_pct	human_alignment_rate_pct	final_retained_pct
+ERR14788864	374402	374320	352352	352352	0.022	94.131	0.00	94.111

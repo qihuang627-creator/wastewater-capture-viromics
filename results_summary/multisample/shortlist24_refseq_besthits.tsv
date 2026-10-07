@@ -1,0 +1,21 @@
+cluster_id	accession	pident	alignment_length	query_length	query_coverage_pct	evalue	bitscore	taxid	scientific_name	title
+Adenoviridae_C001	NC_001454	84.825	26985	34268	78	0.0	26805	130309	Human mastadenovirus F	Human adenovirus F, complete genome
+Adenoviridae_C002	NC_001454	84.651	15389	22263	69	0.0	15112	130309	Human mastadenovirus F	Human adenovirus F, complete genome
+Astroviridae_C001	NC_001943	94.863	6794	6925	98	0.0	10608	1868658	Human astrovirus	Human astrovirus, complete genome
+Astroviridae_C002	NC_030922	95.787	4890	6868	71	0.0	7882	1239565	Mamastrovirus 1	Mamastrovirus 1 genomic RNA, complete genome, isolate: V1347
+Astroviridae_C005	NC_030922	91.427	2298	4497	51	0.0	3153	1239565	Mamastrovirus 1	Mamastrovirus 1 genomic RNA, complete genome, isolate: V1347
+Astroviridae_C006	NC_030922	88.452	3100	4106	75	0.0	3729	1239565	Mamastrovirus 1	Mamastrovirus 1 genomic RNA, complete genome, isolate: V1347
+Astroviridae_C008	NC_001943	80.988	2572	3629	70	0.0	1993	1868658	Human astrovirus	Human astrovirus, complete genome
+Caliciviridae_C004	NC_006269	77.472	1598	2777	57	0.0	920	291175	Sapovirus Hu/Dresden/pJG-Sap01/DE	Sapovirus Hu/Dresden/pJG-Sap01/DE, complete genome
+Parvoviridae_C001	NC_012564	99.694	5229	5456	96	0.0	9566	638313	Human bocavirus 3	Human bocavirus 3, complete genome
+Parvoviridae_C002	NC_038538	86.026	1882	5313	35	0.0	2002	1511887	Porcine bocavirus H18	Porcine bocavirus H18, partial genome
+Parvoviridae_C004	NC_012042	92.319	2083	2174	96	0.0	2952	1511882	Human bocavirus 2c PK	Human bocavirus 2c PK isolate PK-5510, complete genome
+Parvoviridae_C006	NC_012042	92.740	1529	1802	85	0.0	2209	1511882	Human bocavirus 2c PK	Human bocavirus 2c PK isolate PK-5510, complete genome
+Picornaviridae_C001	NC_038307	79.611	3698	7092	52	0.0	2639	12072	Coxsackievirus B3	Coxsackievirus B3 mRNA, complete genome
+Picornaviridae_C002	NC_038307	79.310	2233	6088	37	0.0	1555	12072	Coxsackievirus B3	Coxsackievirus B3 mRNA, complete genome
+Picornaviridae_C003	NC_074775	86.643	3324	3327	99	0.0	3642	1313215	aichivirus A1	Aichi virus genomic RNA, complete genome
+Picornaviridae_C004	NC_074775	91.239	2945	2954	99	0.0	4010	1313215	aichivirus A1	Aichi virus genomic RNA, complete genome
+Sedoreoviridae_C001	NC_011507	85.674	1794	3969	45	0.0	1888	28875	Rotavirus A	Rotavirus A segment 1, complete genome
+Sedoreoviridae_C011	NC_011507	85.968	1575	1923	82	0.0	1685	28875	Rotavirus A	Rotavirus A segment 1, complete genome
+Sedoreoviridae_C013	NC_011508	79.792	1831	1877	97	0.0	1315	28875	Rotavirus A	Rotavirus A segment 3, complete genome
+Sedoreoviridae_C014	NC_011506	82.753	1751	1772	99	0.0	1557	28875	Rotavirus A	Rotavirus A segment 2, complete genome
