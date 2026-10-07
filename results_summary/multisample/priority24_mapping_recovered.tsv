@@ -1,0 +1,3 @@
+sample	family	cluster_id	biological_label	virus_group	assembly_member	evidence_class	mapq20_fragments	FPM	breadth1_mapq20_pct	breadth10_mapq20_pct	mean_depth_mapq20
+ERR14788995	Picornaviridae	Picornaviridae_C004	Kobuvirus-like (Aichivirus-related)	Kobuvirus_like	NO	MAPPING	278	1688.79	98.61	83.65	30.68
+ERR14788864	Parvoviridae	Parvoviridae_C004	Human bocavirus 2-like	HBoV2	NO	MAPPING	28	79.47	86.75	17.76	5.45

@@ -1,59 +1,76 @@
+# ==================================================
 # Raw sequencing data
+# ==================================================
 raw/
-data/
 *.fastq
 *.fastq.gz
 *.fq
 *.fq.gz
-*.sra
 
+# ==================================================
+# Large intermediate analysis results
+# Final summary tables are kept in results_summary/
+# ==================================================
+results/
+
+# ==================================================
+# Logs
+# ==================================================
+logs/
+
+# ==================================================
 # Alignment files
+# ==================================================
 *.bam
 *.bai
 *.sam
 *.cram
 *.crai
 
-# Bowtie2 indices
+# ==================================================
+# Bowtie2 indexes
+# ==================================================
 *.bt2
 *.bt2l
 
-# Large/intermediate analysis directories
-results/assembly/
-results/genomad/
-results/reference_mapping/
-results/consensus/
-results/host_removal_dedup/
-results/dedup/
-results/target_readback/
-qc/
-
-# Databases
+# ==================================================
+# BLAST databases
+# ==================================================
 databases/
-database/
-*.dmnd
+*.ndb
+*.nhr
+*.nin
+*.not
+*.nsq
+*.ntf
+*.nto
+*.nal
+*.btd
+*.bti
+*.sqlite3
 
-# Logs
-logs/
-*.log
-nohup.out
-
-# Temporary files
-tmp/
-temp/
-*.tmp
-
-# Python
-__pycache__/
-*.pyc
-
-# OS/editor files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Compressed archives
+# ==================================================
+# Temporary/download files
+# ==================================================
 *.tar
 *.tar.gz
-*.zip
+*.md5
+*.tmp
+*.temp
+
+# ==================================================
+# Python cache
+# ==================================================
+__pycache__/
+*.pyc
+*.pyo
+
+# ==================================================
+# Environments
+# ==================================================
+.env
+.venv/
+env/
+
+# QC intermediates and reports
+qc/

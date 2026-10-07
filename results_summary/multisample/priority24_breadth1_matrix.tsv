@@ -1,0 +1,25 @@
+cluster_id	biological_label	ERR14788990	ERR14788988	ERR14788991	ERR14788992	ERR14788995	ERR14789044	ERR14788864	ERR14788954
+Adenoviridae_C001	Human adenovirus 41-like	10.64	32.77	7.74	22.02	33.35	30.75	10.64	84.37
+Adenoviridae_C002	Human adenovirus 41-like	4.34	16.78	4.57	10.18	22.46	4.36	2.30	25.79
+Astroviridae_C001	Human astrovirus 1-like	99.45	0.00	98.95	100.00	94.48	90.99	97.24	0.00
+Astroviridae_C005	Human astrovirus 3-like	96.71	0.00	93.44	83.63	38.96	13.30	12.72	5.07
+Astroviridae_C008	Human astrovirus 3-like	90.41	0.00	90.25	97.13	18.85	12.26	22.15	9.92
+Astroviridae_C002	Human astrovirus 1-like	63.26	21.11	28.45	11.27	7.99	0.00	0.00	100.00
+Astroviridae_C006	Human astrovirus 5-like	38.65	94.06	10.96	10.89	40.43	0.00	0.00	0.00
+Caliciviridae_C004	Sapovirus GI.2-like	70.44	93.48	100.00	74.07	35.00	0.00	36.41	48.65
+Caliciviridae_C009	Sapovirus GI.2-like	52.94	67.72	100.00	65.01	29.78	0.00	14.84	13.42
+Parvoviridae_C001	Human bocavirus 3-like	50.86	50.70	46.72	85.48	89.94	36.03	46.33	88.98
+Parvoviridae_C002	Rodent bocavirus-like	80.27	73.25	94.75	96.44	98.59	0.00	0.00	0.00
+Parvoviridae_C006	Human bocavirus 2-like	84.63	37.46	8.82	79.30	77.80	90.51	78.58	37.01
+Parvoviridae_C004	Human bocavirus 2-like	37.21	31.19	16.19	80.82	75.85	95.58	86.75	34.13
+Sedoreoviridae_C004	Rotavirus A segment 3 / VP3-like	75.94	0.00	90.67	99.91	47.33	0.00	19.38	0.00
+Sedoreoviridae_C012	Rotavirus A segment 1 / VP1-like	45.68	0.00	28.62	92.72	0.00	0.00	0.00	0.00
+Sedoreoviridae_C001	Rotavirus A segment 1 / VP1-like	0.00	0.00	69.89	89.52	0.00	0.00	0.00	0.00
+Sedoreoviridae_C011	Rotavirus A segment 1 / VP1-like	18.77	0.00	63.75	77.38	22.05	0.00	0.00	0.00
+Sedoreoviridae_C013	Rotavirus A segment 3 / VP3-like	81.30	0.00	78.42	89.34	0.00	0.00	12.25	0.00
+Sedoreoviridae_C014	Rotavirus A segment 2 / VP2-like	30.64	0.00	98.81	99.83	17.72	0.00	0.00	0.00
+Picornaviridae_C001	Divergent Enterovirus B-like (B106 best hit)	0.00	0.00	0.00	0.00	0.00	0.00	0.00	98.35
+Picornaviridae_C002	Enterovirus B84-like	0.00	0.00	0.00	0.00	0.00	0.00	0.00	97.31
+Picornaviridae_C003	Aichivirus A1-like	17.13	14.37	0.00	8.45	25.85	6.49	0.00	100.00
+Picornaviridae_C004	Kobuvirus-like (Aichivirus-related)	35.44	99.19	17.20	46.99	98.61	34.26	9.41	22.78
+Picornaviridae_C005	Coxsackievirus A19-like	0.00	0.00	0.00	0.00	0.00	0.00	0.00	100.00

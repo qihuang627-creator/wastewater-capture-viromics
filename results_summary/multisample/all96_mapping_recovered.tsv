@@ -1,0 +1,6 @@
+sample	family	cluster_id	representative	representative_length	cluster_size	cluster_sample_count	cluster_samples	assembly_member	evidence_class	best_nt_accession	best_nt_name	query_coverage_pct	top_hsp_identity_pct	match_quality	annotation_source	mapq20_fragments	FPM	breadth1_mapq20_pct	breadth10_mapq20_pct	mean_depth_mapq20
+ERR14788988	Astroviridae	Astroviridae_C018	ERR14788995|k141_2627	1455	1	1	ERR14788995	NO	HIGH_BREADTH_MAPPING	KX022687	Astrovirus MLB2	100.0	98.969	strong	megablast	8	24.04	93.95	0.00	2.91
+ERR14788988	Caliciviridae	Caliciviridae_C007	ERR14789044|k141_2725	2358	1	1	ERR14789044	NO	HIGH_BREADTH_MAPPING	MG012434	Sapovirus GV.1	100.0	98.813	strong	megablast	17	51.09	85.75	0.00	3.45
+ERR14788991	Astroviridae	Astroviridae_C018	ERR14788995|k141_2627	1455	1	1	ERR14788995	NO	HIGH_BREADTH_MAPPING	KX022687	Astrovirus MLB2	100.0	98.969	strong	megablast	45	232.04	89.42	63.51	14.44
+ERR14788995	Picornaviridae	Picornaviridae_C004	ERR14788988|k141_8449	2954	1	1	ERR14788988	NO	HIGH_BREADTH_MAPPING	MF947441	Kobuvirus sp.	99.0	97.833	strong	megablast	278	1688.79	98.61	83.65	30.68
+ERR14788864	Parvoviridae	Parvoviridae_C004	ERR14789044|k141_3682	2174	2	2	ERR14788992,ERR14789044	NO	HIGH_BREADTH_MAPPING	EU082213	Human bocavirus 2	99.0	99.759	strong	megablast	24	68.11	80.82	14.81	4.81

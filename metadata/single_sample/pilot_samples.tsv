@@ -1,0 +1,3 @@
+sample_name	run_accession	library_name	design	biosample	country	collection_date
+RD370_capture	ERR14788990	RD-370	capture	SAMEA117873011	Denmark	2018-03-01
+RD370_non_capture	ERR14789328	RD-370	non-capture	SAMEA117873011	Denmark	2018-03-01

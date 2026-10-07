@@ -1,0 +1,2 @@
+run_accession	sample_accession	library_name	library_layout	library_strategy	library_selection	instrument_platform	instrument_model	read_count	base_count	fastq_bytes	fastq_ftp	fastq_md5
+ERR14788990	SAMEA117873011	RD-370	PAIRED	WGS	RANDOM	ILLUMINA	Illumina MiSeq	398990	83902265	24181889;23014714	ftp.sra.ebi.ac.uk/vol1/fastq/ERR147/090/ERR14788990/ERR14788990_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR147/090/ERR14788990/ERR14788990_2.fastq.gz	83044a3e417a05521c767b80bf54dbdc;d41b981d27fd533157b1102f15e5b231

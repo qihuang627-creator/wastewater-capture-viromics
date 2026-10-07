@@ -1,0 +1,11 @@
+cluster_id	accession	pident	alignment_length	query_length	query_coverage_pct	bitscore	scientific_name	title
+Astroviridae_C011	OQ802716	84.234	2423	2413	99	2644	Jingmen rodent astrovirus 2	MAG: Jingmen rodent astrovirus 2 isolate JM_Ra.norvegicus_astro_1 genomic sequence
+Caliciviridae_C002	MH922773	86.839	5387	5510	99	6515	Sapovirus GII	Sapovirus GII strain Hu/KE/2008/GII.6/Siaya0494 polyprotein (ORF1) gene, partial cds; and hypothetical protein (ORF2) gene, complete cds
+Picornaviridae_C001	KX171334	82.178	6980	7092	100	6969	Enterovirus B106	Enterovirus B106 isolate AKS-AWT-AFP2F/XJ/CHN/2011, complete genome
+Picornaviridae_C002	AY302543	80.753	5471	6088	99	5107	Echovirus E17	Human echovirus 17 strain CHHE-29 complete genome
+Picornaviridae_C003	GQ927704	87.556	3327	3327	100	4148	aichivirus A1	Aichi virus strain D/VI2169/2004 polyprotein gene, complete cds
+Picornaviridae_C010	OQ791575	86.471	1944	1980	98	2317	Coxsackievirus B5	Coxsackievirus B5 isolate CVB5/USA/16K3/2018, complete genome
+Picornaviridae_C013	PQ889405	87.560	1455	1524	95	1809	Coxsackievirus A24	Coxsackievirus A24 isolate CMR-S33-N2 polyprotein gene, complete cds
+Picornaviridae_C014	PX441811	89.686	1464	1465	99	1960	Enterovirus A119	Enterovirus A119 isolate EVA119_250025037201a_FRA25, complete genome
+Picornaviridae_C015	PQ889391	87.287	999	1294	100	1230	Coxsackievirus A13	Coxsackievirus A13 isolate CMR-S60-N1 polyprotein gene, complete cds
+Picornaviridae_C018	MH933858	88.057	988	1070	92	1251	Human enterovirus	Human enterovirus isolate EV/Human/CMRHP55/CMR/2014 polyprotein gene, complete cds

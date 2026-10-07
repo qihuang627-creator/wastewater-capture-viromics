@@ -1,0 +1,25 @@
+cluster_id	accession	query_length	query_coverage_pct	max_pident_pct	hsp_count	total_bitscore	taxid	scientific_name	title
+Adenoviridae_C001	KY316161	34268	100.0	99.426	4	62194.0	10524	Human adenovirus 41	Human adenovirus 41 isolate SH/2015/D187, complete genome
+Adenoviridae_C002	ON442328	22263	99.0	99.948	5	41527.0	10524	Human adenovirus 41	Human adenovirus 41 isolate Hannover_2022_2, complete genome
+Astroviridae_C001	PP901925	6925	100.0	99.426	2	12581.0	12456	Human astrovirus 1	Human astrovirus 1 isolate E59S4 putative serine protease (ORF1a) gene, complete cds; RNA-dependent RNA polymerase (ORF1b) gene, partial cds; and capsid protein (ORF2) gene, complete cds
+Astroviridae_C002	JF327666	6868	99.0	100.000	2	11715.0	1868658	Human astrovirus	Human astrovirus strain Pune/063681/India, complete genome
+Astroviridae_C005	MN444721	4497	100.0	98.931	3	7878.0	35740	Human astrovirus 3	Human astrovirus 3 strain Hu/US/2017/CA-RGDS-1074, complete genome
+Astroviridae_C006	MG921619	4106	99.0	100.000	2	7499.0	1868658	Human astrovirus	Human astrovirus isolate Yu/1-CHN, complete genome
+Astroviridae_C008	LC732123	3629	100.0	98.515	2	6363.0	35740	Human astrovirus 3	Human astrovirus 3 Human/JPN/2016/JP14665 RNA, nearly complete genome
+Caliciviridae_C004	MF431582	2777	100.0	100.000	2	5027.0	2024723	Sapovirus Hu/GI.2/Dublin/2016/IRL	Sapovirus Hu/GI.2/Dublin/2016/IRL, partial genome
+Caliciviridae_C009	MF431582	1766	100.0	99.037	1	3168.0	2024723	Sapovirus Hu/GI.2/Dublin/2016/IRL	Sapovirus Hu/GI.2/Dublin/2016/IRL, partial genome
+Parvoviridae_C001	OP255991	5456	100.0	99.735	2	10012.0	638313	Human bocavirus 3	Human bocavirus 3 strain R04-14/Hu/NL/2018, complete genome
+Parvoviridae_C002	KY927869	5313	99.0	98.191	2	9157.0	2137546	Rodent bocavirus	Rodent bocavirus isolate DLS16, complete genome
+Parvoviridae_C004	EU082213	2174	99.0	99.759	2	3964.0	573977	Human bocavirus 2	Human bocavirus 2 strain W153, complete genome
+Parvoviridae_C006	MZ546192	1802	100.0	97.603	2	3090.0	1883111	Bocaparvovirus sp.	Bocaparvovirus sp. strain Parvozj-8, complete genome
+Picornaviridae_C001	KX171334	7092	98.0	82.233	1	6008.0	1248136	Enterovirus B106	Enterovirus B106 isolate AKS-AWT-AFP2F/XJ/CHN/2011, complete genome
+Picornaviridae_C002	DQ902712	6088	99.0	91.587	2	4151.0	318567	Enterovirus B84	Human enterovirus 84 isolate CIV2003-10603, complete genome
+Picornaviridae_C003	GQ927704	3327	100.0	87.628	1	3840.0	1313215	aichivirus A1	Aichi virus strain D/VI2169/2004 polyprotein gene, complete cds
+Picornaviridae_C004	MF947441	2954	99.0	97.833	1	5099.0	2094719	Kobuvirus sp.	Kobuvirus sp. strain 16317x87 polyprotein gene, complete cds
+Picornaviridae_C005	PQ889394	2878	99.0	97.497	1	4915.0	42778	Coxsackievirus A19	Coxsackievirus A19 isolate CMR-ENV01-C7 polyprotein gene, partial cds
+Sedoreoviridae_C001	LC477448	3969	99.0	97.615	4	6535.0	10941	Human rotavirus A	Human rotavirus A Human-wt/JPN/Tokyo17-119/2017/G3P[8](DS-1) VP1 gene for VP1 protein, complete cds
+Sedoreoviridae_C004	OR890193	3205	99.0	99.219	2	5222.0	28875	Rotavirus A	Rotavirus A strain RVA/Human-wt/GHA/WMH-1439/2015/G9P[4] segment 3, complete sequence
+Sedoreoviridae_C011	MG599517	1923	100.0	96.698	2	2902.0	10941	Human rotavirus A	Human rotavirus A strain RVA/Human-wt/BRA/IAL-R3165/2013/G1P[8] structural protein VP1 gene, complete cds
+Sedoreoviridae_C012	LC469406	1922	100.0	100.000	4	3513.0	10941	Human rotavirus A	Human rotavirus A RVA/Human-wt/IDN/STM182/2016/G3P[6] gene for VP1 protein, complete cds
+Sedoreoviridae_C013	MH569759	1877	99.0	100.000	2	3344.0	28875	Rotavirus A	Rotavirus A strain RVA/Human-wt/BRA/IAL-R608/2015/G3P[8] VP3 gene, complete cds
+Sedoreoviridae_C014	OR890170	1772	99.0	99.085	1	3142.0	28875	Rotavirus A	Rotavirus A strain RVA/Human-wt/GHA/103M/2015/G9P[4] segment 2, complete sequence

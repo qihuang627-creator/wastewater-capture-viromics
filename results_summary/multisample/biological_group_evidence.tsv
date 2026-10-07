@@ -1,0 +1,409 @@
+sample	family	biological_group	display_label	group_evidence_class	clusters_in_group	assembly_cluster_count	high_breadth_mapping_cluster_count	partial_mapping_cluster_count	local_mapping_cluster_count	assembly_cluster_ids	high_breadth_mapping_cluster_ids	best_supported_cluster	max_breadth1_mapq20_pct	max_breadth10_mapq20_pct	max_mean_depth_mapq20	max_FPM
+ERR14788990	Adenoviridae	HAdV41	Human adenovirus 41-like	LOCAL_MAPPING	2	0	0	0	1			Adenoviridae_C001	10.64	3.13	0.84	376.51
+ERR14788988	Adenoviridae	HAdV41	Human adenovirus 41-like	LOCAL_MAPPING	2	0	0	0	2			Adenoviridae_C001	32.77	4.76	1.78	387.67
+ERR14788991	Adenoviridae	HAdV41	Human adenovirus 41-like	ASSEMBLY	2	1	0	0	0	Adenoviridae_C001		Adenoviridae_C001	7.74	2.87	0.84	314.54
+ERR14788992	Adenoviridae	HAdV41	Human adenovirus 41-like	ASSEMBLY	2	1	0	0	1	Adenoviridae_C002		Adenoviridae_C002	22.02	3.08	1.26	300.10
+ERR14788995	Adenoviridae	HAdV41	Human adenovirus 41-like	ASSEMBLY	2	2	0	0	0	Adenoviridae_C001,Adenoviridae_C002		Adenoviridae_C001	33.35	8.18	2.59	1470.10
+ERR14789044	Adenoviridae	HAdV41	Human adenovirus 41-like	ASSEMBLY	2	1	0	0	0	Adenoviridae_C001		Adenoviridae_C001	30.75	14.21	2.96	2762.24
+ERR14788864	Adenoviridae	HAdV41	Human adenovirus 41-like	LOCAL_MAPPING	2	0	0	0	1			Adenoviridae_C001	10.64	0.00	0.19	42.57
+ERR14788954	Adenoviridae	HAdV41	Human adenovirus 41-like	ASSEMBLY	2	1	0	0	1	Adenoviridae_C001		Adenoviridae_C001	84.37	67.42	2038.84	169707.91
+ERR14788990	Adenoviridae	HAdV_D_like	Human mastadenovirus D-like	NONE	4	0	0	0	0			Adenoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788988	Adenoviridae	HAdV_D_like	Human mastadenovirus D-like	NONE	4	0	0	0	0			Adenoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788991	Adenoviridae	HAdV_D_like	Human mastadenovirus D-like	NONE	4	0	0	0	0			Adenoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788992	Adenoviridae	HAdV_D_like	Human mastadenovirus D-like	NONE	4	0	0	0	0			Adenoviridae_C005	9.86	0.00	0.20	3.00
+ERR14788995	Adenoviridae	HAdV_D_like	Human mastadenovirus D-like	NONE	4	0	0	0	0			Adenoviridae_C003	0.00	0.00	0.00	0.00
+ERR14789044	Adenoviridae	HAdV_D_like	Human mastadenovirus D-like	NONE	4	0	0	0	0			Adenoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788864	Adenoviridae	HAdV_D_like	Human mastadenovirus D-like	NONE	4	0	0	0	0			Adenoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788954	Adenoviridae	HAdV_D_like	Human mastadenovirus D-like	ASSEMBLY	4	4	0	0	0	Adenoviridae_C003,Adenoviridae_C004,Adenoviridae_C005,Adenoviridae_C006		Adenoviridae_C005	100.00	77.40	23.35	313.34
+ERR14788990	Astroviridae	MLB1	Astrovirus MLB1-like	NONE	1	0	0	0	0			Astroviridae_C007	0.00	0.00	0.00	0.00
+ERR14788988	Astroviridae	MLB1	Astrovirus MLB1-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C007	45.80	0.00	0.85	24.04
+ERR14788991	Astroviridae	MLB1	Astrovirus MLB1-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C007	39.08	5.35	1.38	77.35
+ERR14788992	Astroviridae	MLB1	Astrovirus MLB1-like	NONE	1	0	0	0	0			Astroviridae_C007	9.16	0.00	0.15	3.00
+ERR14788995	Astroviridae	MLB1	Astrovirus MLB1-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C007	27.82	0.00	0.40	30.37
+ERR14789044	Astroviridae	MLB1	Astrovirus MLB1-like	ASSEMBLY	1	1	0	0	0	Astroviridae_C007		Astroviridae_C007	99.97	68.58	18.06	1825.89
+ERR14788864	Astroviridae	MLB1	Astrovirus MLB1-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C007	22.94	0.00	0.54	14.19
+ERR14788954	Astroviridae	MLB1	Astrovirus MLB1-like	NONE	1	0	0	0	0			Astroviridae_C007	0.00	0.00	0.00	0.00
+ERR14788990	Astroviridae	MLB2	Astrovirus MLB2-like	PARTIAL_MAPPING	1	0	0	1	0			Astroviridae_C018	69.35	39.73	6.38	111.36
+ERR14788988	Astroviridae	MLB2	Astrovirus MLB2-like	HIGH_BREADTH_MAPPING	1	0	1	0	0		Astroviridae_C018	Astroviridae_C018	93.95	0.00	2.91	24.04
+ERR14788991	Astroviridae	MLB2	Astrovirus MLB2-like	HIGH_BREADTH_MAPPING	1	0	1	0	0		Astroviridae_C018	Astroviridae_C018	89.42	63.51	14.44	232.04
+ERR14788992	Astroviridae	MLB2	Astrovirus MLB2-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C018	22.54	0.00	1.17	9.00
+ERR14788995	Astroviridae	MLB2	Astrovirus MLB2-like	ASSEMBLY	1	1	0	0	0	Astroviridae_C018		Astroviridae_C018	97.87	21.99	7.55	188.32
+ERR14789044	Astroviridae	MLB2	Astrovirus MLB2-like	PARTIAL_MAPPING	1	0	0	1	0			Astroviridae_C018	61.99	14.02	4.10	140.45
+ERR14788864	Astroviridae	MLB2	Astrovirus MLB2-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C018	39.59	0.00	0.98	8.51
+ERR14788954	Astroviridae	MLB2	Astrovirus MLB2-like	NONE	1	0	0	0	0			Astroviridae_C018	0.00	0.00	0.00	0.00
+ERR14788990	Astroviridae	VA5	Astrovirus VA5-like	NONE	2	0	0	0	0			Astroviridae_C009	0.00	0.00	0.00	0.00
+ERR14788988	Astroviridae	VA5	Astrovirus VA5-like	NONE	2	0	0	0	0			Astroviridae_C009	0.00	0.00	0.00	0.00
+ERR14788991	Astroviridae	VA5	Astrovirus VA5-like	NONE	2	0	0	0	0			Astroviridae_C009	0.00	0.00	0.00	0.00
+ERR14788992	Astroviridae	VA5	Astrovirus VA5-like	NONE	2	0	0	0	0			Astroviridae_C009	0.00	0.00	0.00	0.00
+ERR14788995	Astroviridae	VA5	Astrovirus VA5-like	NONE	2	0	0	0	0			Astroviridae_C009	0.00	0.00	0.00	0.00
+ERR14789044	Astroviridae	VA5	Astrovirus VA5-like	NONE	2	0	0	0	0			Astroviridae_C009	0.00	0.00	0.00	0.00
+ERR14788864	Astroviridae	VA5	Astrovirus VA5-like	NONE	2	0	0	0	0			Astroviridae_C009	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	VA5	Astrovirus VA5-like	ASSEMBLY	2	2	0	0	0	Astroviridae_C009,Astroviridae_C015		Astroviridae_C015	100.00	94.08	29.87	210.69
+ERR14788990	Astroviridae	HAstV1	HAstV-1-like (population unresolved)	ASSEMBLY	3	1	0	0	2	Astroviridae_C014		Astroviridae_C014	74.37	18.68	5.86	153.79
+ERR14788988	Astroviridae	HAstV1	HAstV-1-like (population unresolved)	NONE	3	0	0	0	0			Astroviridae_C012	0.00	0.00	0.00	0.00
+ERR14788991	Astroviridae	HAstV1	HAstV-1-like (population unresolved)	ASSEMBLY	3	2	0	0	1	Astroviridae_C012,Astroviridae_C013		Astroviridae_C012	100.00	61.98	23.93	665.17
+ERR14788992	Astroviridae	HAstV1	HAstV-1-like (population unresolved)	LOCAL_MAPPING	3	0	0	0	2			Astroviridae_C012	42.28	20.47	3.69	60.02
+ERR14788995	Astroviridae	HAstV1	HAstV-1-like (population unresolved)	NONE	3	0	0	0	0			Astroviridae_C013	5.81	0.00	0.06	6.07
+ERR14789044	Astroviridae	HAstV1	HAstV-1-like (population unresolved)	NONE	3	0	0	0	0			Astroviridae_C012	0.00	0.00	0.00	0.00
+ERR14788864	Astroviridae	HAstV1	HAstV-1-like (population unresolved)	NONE	3	0	0	0	0			Astroviridae_C012	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	HAstV1	HAstV-1-like (population unresolved)	NONE	3	0	0	0	0			Astroviridae_C013	8.86	0.00	0.17	1.80
+ERR14788990	Astroviridae	HAstV1_A	HAstV-1-like population A	ASSEMBLY	1	1	0	0	0	Astroviridae_C001		Astroviridae_C001	96.38	90.53	325.69	25974.03
+ERR14788988	Astroviridae	HAstV1_A	HAstV-1-like population A	NONE	1	0	0	0	0			Astroviridae_C001	0.00	0.00	0.00	0.00
+ERR14788991	Astroviridae	HAstV1_A	HAstV-1-like population A	ASSEMBLY	1	1	0	0	0	Astroviridae_C001		Astroviridae_C001	97.21	87.94	202.45	15964.03
+ERR14788992	Astroviridae	HAstV1_A	HAstV-1-like population A	ASSEMBLY	1	1	0	0	0	Astroviridae_C001		Astroviridae_C001	98.82	94.45	290.60	13468.34
+ERR14788995	Astroviridae	HAstV1_A	HAstV-1-like population A	ASSEMBLY	1	1	0	0	0	Astroviridae_C001		Astroviridae_C001	82.53	8.53	3.43	485.98
+ERR14789044	Astroviridae	HAstV1_A	HAstV-1-like population A	ASSEMBLY	1	1	0	0	0	Astroviridae_C001		Astroviridae_C001	67.10	57.27	19.54	3511.32
+ERR14788864	Astroviridae	HAstV1_A	HAstV-1-like population A	ASSEMBLY	1	1	0	0	0	Astroviridae_C001		Astroviridae_C001	87.78	65.11	17.45	752.09
+ERR14788954	Astroviridae	HAstV1_A	HAstV-1-like population A	NONE	1	0	0	0	0			Astroviridae_C001	0.00	0.00	0.00	0.00
+ERR14788990	Astroviridae	HAstV1_B	HAstV-1-like population B	ASSEMBLY	1	1	0	0	0	Astroviridae_C002		Astroviridae_C002	55.04	14.72	13.90	1150.75
+ERR14788988	Astroviridae	HAstV1_B	HAstV-1-like population B	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C002	18.26	0.15	0.69	36.06
+ERR14788991	Astroviridae	HAstV1_B	HAstV-1-like population B	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C002	28.45	5.63	3.56	283.60
+ERR14788992	Astroviridae	HAstV1_B	HAstV-1-like population B	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C002	10.18	0.00	0.24	9.00
+ERR14788995	Astroviridae	HAstV1_B	HAstV-1-like population B	NONE	1	0	0	0	0			Astroviridae_C002	7.99	0.00	0.16	18.22
+ERR14789044	Astroviridae	HAstV1_B	HAstV-1-like population B	NONE	1	0	0	0	0			Astroviridae_C002	0.00	0.00	0.00	0.00
+ERR14788864	Astroviridae	HAstV1_B	HAstV-1-like population B	NONE	1	0	0	0	0			Astroviridae_C002	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	HAstV1_B	HAstV-1-like population B	ASSEMBLY	1	1	0	0	0	Astroviridae_C002		Astroviridae_C002	100.00	99.23	818.41	13727.47
+ERR14788990	Astroviridae	HAstV2	HAstV-2-like	ASSEMBLY	2	1	0	1	0	Astroviridae_C020		Astroviridae_C020	50.42	33.66	9.13	567.42
+ERR14788988	Astroviridae	HAstV2	HAstV-2-like	PARTIAL_MAPPING	2	0	0	1	0			Astroviridae_C004	73.80	20.25	5.30	177.30
+ERR14788991	Astroviridae	HAstV2	HAstV-2-like	ASSEMBLY	2	1	0	0	0	Astroviridae_C004		Astroviridae_C004	91.17	72.89	30.07	1907.85
+ERR14788992	Astroviridae	HAstV2	HAstV-2-like	LOCAL_MAPPING	2	0	0	0	1			Astroviridae_C004	29.85	0.00	0.88	36.01
+ERR14788995	Astroviridae	HAstV2	HAstV-2-like	NONE	2	0	0	0	0			Astroviridae_C004	0.00	0.00	0.00	0.00
+ERR14789044	Astroviridae	HAstV2	HAstV-2-like	LOCAL_MAPPING	2	0	0	0	1			Astroviridae_C004	14.94	4.74	1.21	163.86
+ERR14788864	Astroviridae	HAstV2	HAstV-2-like	NONE	2	0	0	0	0			Astroviridae_C004	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	HAstV2	HAstV-2-like	NONE	2	0	0	0	0			Astroviridae_C004	0.00	0.00	0.00	0.00
+ERR14788990	Astroviridae	HAstV3	HAstV-3-like	ASSEMBLY	2	2	0	0	0	Astroviridae_C005,Astroviridae_C008		Astroviridae_C008	90.41	86.15	240.57	12557.47
+ERR14788988	Astroviridae	HAstV3	HAstV-3-like	NONE	2	0	0	0	0			Astroviridae_C005	0.00	0.00	0.00	0.00
+ERR14788991	Astroviridae	HAstV3	HAstV-3-like	ASSEMBLY	2	2	0	0	0	Astroviridae_C005,Astroviridae_C008		Astroviridae_C008	90.25	88.45	264.68	14009.78
+ERR14788992	Astroviridae	HAstV3	HAstV-3-like	ASSEMBLY	2	2	0	0	0	Astroviridae_C005,Astroviridae_C008		Astroviridae_C008	96.09	78.92	100.73	3100.00
+ERR14788995	Astroviridae	HAstV3	HAstV-3-like	LOCAL_MAPPING	2	0	0	0	2			Astroviridae_C005	35.67	10.50	2.32	139.72
+ERR14789044	Astroviridae	HAstV3	HAstV-3-like	LOCAL_MAPPING	2	0	0	0	1			Astroviridae_C008	12.26	0.00	0.43	35.11
+ERR14788864	Astroviridae	HAstV3	HAstV-3-like	LOCAL_MAPPING	2	0	0	0	2			Astroviridae_C008	22.15	0.00	0.27	5.68
+ERR14788954	Astroviridae	HAstV3	HAstV-3-like	NONE	2	0	0	0	0			Astroviridae_C008	9.92	1.52	0.77	7.20
+ERR14788990	Astroviridae	HAstV4	HAstV-4-like	ASSEMBLY	2	1	0	0	0	Astroviridae_C019		Astroviridae_C019	95.80	51.62	17.19	275.76
+ERR14788988	Astroviridae	HAstV4	HAstV-4-like	LOCAL_MAPPING	2	0	0	0	1			Astroviridae_C019	35.55	0.00	1.55	12.02
+ERR14788991	Astroviridae	HAstV4	HAstV-4-like	PARTIAL_MAPPING	2	0	0	1	0			Astroviridae_C019	66.81	36.21	28.69	422.82
+ERR14788992	Astroviridae	HAstV4	HAstV-4-like	NONE	2	0	0	0	0			Astroviridae_C010	0.00	0.00	0.00	0.00
+ERR14788995	Astroviridae	HAstV4	HAstV-4-like	NONE	2	0	0	0	0			Astroviridae_C010	0.00	0.00	0.00	0.00
+ERR14789044	Astroviridae	HAstV4	HAstV-4-like	LOCAL_MAPPING	2	0	0	0	1			Astroviridae_C019	33.11	0.00	0.33	11.70
+ERR14788864	Astroviridae	HAstV4	HAstV-4-like	NONE	2	0	0	0	0			Astroviridae_C010	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	HAstV4	HAstV-4-like	ASSEMBLY	2	1	0	0	0	Astroviridae_C010		Astroviridae_C010	100.00	76.56	18.56	114.35
+ERR14788990	Astroviridae	HAstV5	HAstV-5-like	ASSEMBLY	1	1	0	0	0	Astroviridae_C006		Astroviridae_C006	34.63	22.67	10.60	487.87
+ERR14788988	Astroviridae	HAstV5	HAstV-5-like	ASSEMBLY	1	1	0	0	0	Astroviridae_C006		Astroviridae_C006	94.06	61.45	16.26	405.70
+ERR14788991	Astroviridae	HAstV5	HAstV-5-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C006	10.96	0.00	0.48	25.78
+ERR14788992	Astroviridae	HAstV5	HAstV-5-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C006	10.89	0.00	0.30	9.00
+ERR14788995	Astroviridae	HAstV5	HAstV-5-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C006	40.43	0.00	0.89	85.05
+ERR14789044	Astroviridae	HAstV5	HAstV-5-like	NONE	1	0	0	0	0			Astroviridae_C006	0.00	0.00	0.00	0.00
+ERR14788864	Astroviridae	HAstV5	HAstV-5-like	NONE	1	0	0	0	0			Astroviridae_C006	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	HAstV5	HAstV-5-like	NONE	1	0	0	0	0			Astroviridae_C006	0.00	0.00	0.00	0.00
+ERR14788990	Astroviridae	HAstV8	HAstV-8-like	ASSEMBLY	1	1	0	0	0	Astroviridae_C017		Astroviridae_C017	100.00	78.88	41.37	694.69
+ERR14788988	Astroviridae	HAstV8	HAstV-8-like	NONE	1	0	0	0	0			Astroviridae_C017	0.00	0.00	0.00	0.00
+ERR14788991	Astroviridae	HAstV8	HAstV-8-like	PARTIAL_MAPPING	1	0	0	1	0			Astroviridae_C017	72.43	35.53	13.49	242.35
+ERR14788992	Astroviridae	HAstV8	HAstV-8-like	PARTIAL_MAPPING	1	0	0	1	0			Astroviridae_C017	77.63	21.12	4.97	45.01
+ERR14788995	Astroviridae	HAstV8	HAstV-8-like	NONE	1	0	0	0	0			Astroviridae_C017	0.00	0.00	0.00	0.00
+ERR14789044	Astroviridae	HAstV8	HAstV-8-like	NONE	1	0	0	0	0			Astroviridae_C017	0.00	0.00	0.00	0.00
+ERR14788864	Astroviridae	HAstV8	HAstV-8-like	NONE	1	0	0	0	0			Astroviridae_C017	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	HAstV8	HAstV-8-like	NONE	1	0	0	0	0			Astroviridae_C017	0.00	0.00	0.00	0.00
+ERR14788990	Astroviridae	HAstV_unresolved	Human astrovirus-like, unresolved type	ASSEMBLY	1	1	0	0	0	Astroviridae_C022		Astroviridae_C022	86.70	75.90	37.21	434.84
+ERR14788988	Astroviridae	HAstV_unresolved	Human astrovirus-like, unresolved type	NONE	1	0	0	0	0			Astroviridae_C022	0.00	0.00	0.00	0.00
+ERR14788991	Astroviridae	HAstV_unresolved	Human astrovirus-like, unresolved type	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C022	23.00	0.00	0.46	5.16
+ERR14788992	Astroviridae	HAstV_unresolved	Human astrovirus-like, unresolved type	PARTIAL_MAPPING	1	0	0	1	0			Astroviridae_C022	56.00	44.90	10.62	84.03
+ERR14788995	Astroviridae	HAstV_unresolved	Human astrovirus-like, unresolved type	NONE	1	0	0	0	0			Astroviridae_C022	0.00	0.00	0.00	0.00
+ERR14789044	Astroviridae	HAstV_unresolved	Human astrovirus-like, unresolved type	NONE	1	0	0	0	0			Astroviridae_C022	0.00	0.00	0.00	0.00
+ERR14788864	Astroviridae	HAstV_unresolved	Human astrovirus-like, unresolved type	NONE	1	0	0	0	0			Astroviridae_C022	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	HAstV_unresolved	Human astrovirus-like, unresolved type	NONE	1	0	0	0	0			Astroviridae_C022	0.00	0.00	0.00	0.00
+ERR14788990	Astroviridae	Mamastrovirus1_like	Mamastrovirus 1-like	LOCAL_MAPPING	2	0	0	0	1			Astroviridae_C016	11.84	0.00	0.12	5.30
+ERR14788988	Astroviridae	Mamastrovirus1_like	Mamastrovirus 1-like	NONE	2	0	0	0	0			Astroviridae_C016	0.00	0.00	0.00	0.00
+ERR14788991	Astroviridae	Mamastrovirus1_like	Mamastrovirus 1-like	LOCAL_MAPPING	2	0	0	0	1			Astroviridae_C021	28.52	0.00	0.55	5.16
+ERR14788992	Astroviridae	Mamastrovirus1_like	Mamastrovirus 1-like	LOCAL_MAPPING	2	0	0	0	2			Astroviridae_C021	21.87	0.00	0.62	9.00
+ERR14788995	Astroviridae	Mamastrovirus1_like	Mamastrovirus 1-like	NONE	2	0	0	0	0			Astroviridae_C016	0.00	0.00	0.00	0.00
+ERR14789044	Astroviridae	Mamastrovirus1_like	Mamastrovirus 1-like	ASSEMBLY	2	2	0	0	0	Astroviridae_C016,Astroviridae_C021		Astroviridae_C021	72.35	40.37	7.45	175.57
+ERR14788864	Astroviridae	Mamastrovirus1_like	Mamastrovirus 1-like	NONE	2	0	0	0	0			Astroviridae_C016	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	Mamastrovirus1_like	Mamastrovirus 1-like	NONE	2	0	0	0	0			Astroviridae_C016	0.00	0.00	0.00	0.00
+ERR14788990	Astroviridae	Mamastrovirus2_like	Mamastrovirus 2-like	NONE	1	0	0	0	0			Astroviridae_C003	3.95	3.03	0.45	42.42
+ERR14788988	Astroviridae	Mamastrovirus2_like	Mamastrovirus 2-like	ASSEMBLY	1	1	0	0	0	Astroviridae_C003		Astroviridae_C003	99.30	43.30	9.92	414.71
+ERR14788991	Astroviridae	Mamastrovirus2_like	Mamastrovirus 2-like	NONE	1	0	0	0	0			Astroviridae_C003	0.00	0.00	0.00	0.00
+ERR14788992	Astroviridae	Mamastrovirus2_like	Mamastrovirus 2-like	NONE	1	0	0	0	0			Astroviridae_C003	0.00	0.00	0.00	0.00
+ERR14788995	Astroviridae	Mamastrovirus2_like	Mamastrovirus 2-like	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C003	44.56	3.61	1.44	157.94
+ERR14789044	Astroviridae	Mamastrovirus2_like	Mamastrovirus 2-like	NONE	1	0	0	0	0			Astroviridae_C003	0.00	0.00	0.00	0.00
+ERR14788864	Astroviridae	Mamastrovirus2_like	Mamastrovirus 2-like	NONE	1	0	0	0	0			Astroviridae_C003	8.61	0.00	0.14	8.51
+ERR14788954	Astroviridae	Mamastrovirus2_like	Mamastrovirus 2-like	NONE	1	0	0	0	0			Astroviridae_C003	0.00	0.00	0.00	0.00
+ERR14788990	Astroviridae	Rodent_astrovirus_like	Rodent astrovirus-like (reference match)	NONE	1	0	0	0	0			Astroviridae_C011	0.00	0.00	0.00	0.00
+ERR14788988	Astroviridae	Rodent_astrovirus_like	Rodent astrovirus-like (reference match)	NONE	1	0	0	0	0			Astroviridae_C011	0.00	0.00	0.00	0.00
+ERR14788991	Astroviridae	Rodent_astrovirus_like	Rodent astrovirus-like (reference match)	NONE	1	0	0	0	0			Astroviridae_C011	0.00	0.00	0.00	0.00
+ERR14788992	Astroviridae	Rodent_astrovirus_like	Rodent astrovirus-like (reference match)	NONE	1	0	0	0	0			Astroviridae_C011	9.20	0.00	0.53	9.00
+ERR14788995	Astroviridae	Rodent_astrovirus_like	Rodent astrovirus-like (reference match)	LOCAL_MAPPING	1	0	0	0	1			Astroviridae_C011	13.26	0.00	0.18	6.07
+ERR14789044	Astroviridae	Rodent_astrovirus_like	Rodent astrovirus-like (reference match)	NONE	1	0	0	0	0			Astroviridae_C011	0.00	0.00	0.00	0.00
+ERR14788864	Astroviridae	Rodent_astrovirus_like	Rodent astrovirus-like (reference match)	NONE	1	0	0	0	0			Astroviridae_C011	0.00	0.00	0.00	0.00
+ERR14788954	Astroviridae	Rodent_astrovirus_like	Rodent astrovirus-like (reference match)	ASSEMBLY	1	1	0	0	0	Astroviridae_C011		Astroviridae_C011	97.14	85.99	52.61	309.74
+ERR14788990	Caliciviridae	NoV_GI	Norovirus GI-like	LOCAL_MAPPING	2	0	0	0	1			Caliciviridae_C015	24.56	0.00	1.44	21.21
+ERR14788988	Caliciviridae	NoV_GI	Norovirus GI-like	LOCAL_MAPPING	2	0	0	0	1			Caliciviridae_C015	18.28	0.00	0.68	6.01
+ERR14788991	Caliciviridae	NoV_GI	Norovirus GI-like	NONE	2	0	0	0	0			Caliciviridae_C001	0.00	0.00	0.00	0.00
+ERR14788992	Caliciviridae	NoV_GI	Norovirus GI-like	ASSEMBLY	2	1	0	0	0	Caliciviridae_C015		Caliciviridae_C015	93.62	29.88	11.35	81.03
+ERR14788995	Caliciviridae	NoV_GI	Norovirus GI-like	NONE	2	0	0	0	0			Caliciviridae_C001	0.00	0.00	0.00	0.00
+ERR14789044	Caliciviridae	NoV_GI	Norovirus GI-like	NONE	2	0	0	0	0			Caliciviridae_C001	0.00	0.00	0.00	0.00
+ERR14788864	Caliciviridae	NoV_GI	Norovirus GI-like	NONE	2	0	0	0	0			Caliciviridae_C001	0.00	0.00	0.00	0.00
+ERR14788954	Caliciviridae	NoV_GI	Norovirus GI-like	ASSEMBLY	2	1	0	0	0	Caliciviridae_C001		Caliciviridae_C001	94.66	89.96	46.29	874.29
+ERR14788990	Caliciviridae	NoV_GII	Norovirus GII-like	NONE	2	0	0	0	0			Picornaviridae_C020	0.00	0.00	0.00	0.00
+ERR14788988	Caliciviridae	NoV_GII	Norovirus GII-like	NONE	2	0	0	0	0			Picornaviridae_C020	0.00	0.00	0.00	0.00
+ERR14788991	Caliciviridae	NoV_GII	Norovirus GII-like	NONE	2	0	0	0	0			Picornaviridae_C020	0.00	0.00	0.00	0.00
+ERR14788992	Caliciviridae	NoV_GII	Norovirus GII-like	NONE	2	0	0	0	0			Picornaviridae_C020	0.00	0.00	0.00	0.00
+ERR14788995	Caliciviridae	NoV_GII	Norovirus GII-like	NONE	2	0	0	0	0			Picornaviridae_C020	0.00	0.00	0.00	0.00
+ERR14789044	Caliciviridae	NoV_GII	Norovirus GII-like	NONE	2	0	0	0	0			Picornaviridae_C020	0.00	0.00	0.00	0.00
+ERR14788864	Caliciviridae	NoV_GII	Norovirus GII-like	NONE	2	0	0	0	0			Picornaviridae_C020	0.00	0.00	0.00	0.00
+ERR14788954	Caliciviridae	NoV_GII	Norovirus GII-like	ASSEMBLY	2	2	0	0	0	Picornaviridae_C020,Picornaviridae_C021		Picornaviridae_C021	98.41	76.46	26.95	72.03
+ERR14788990	Caliciviridae	SaV_GI	Sapovirus GI-like	ASSEMBLY	8	1	0	1	4	Caliciviridae_C014		Caliciviridae_C014	58.94	21.68	4.81	169.70
+ERR14788988	Caliciviridae	SaV_GI	Sapovirus GI-like	ASSEMBLY	8	1	0	3	0	Caliciviridae_C004		Caliciviridae_C004	79.83	33.53	7.37	141.24
+ERR14788991	Caliciviridae	SaV_GI	Sapovirus GI-like	ASSEMBLY	8	3	0	1	2	Caliciviridae_C004,Caliciviridae_C009,Caliciviridae_C008		Caliciviridae_C009	100.00	81.53	30.32	1026.11
+ERR14788992	Caliciviridae	SaV_GI	Sapovirus GI-like	ASSEMBLY	8	3	0	0	3	Caliciviridae_C004,Caliciviridae_C009,Caliciviridae_C011		Caliciviridae_C011	93.43	44.20	9.56	186.06
+ERR14788995	Caliciviridae	SaV_GI	Sapovirus GI-like	PARTIAL_MAPPING	8	0	0	3	3			Caliciviridae_C012	60.40	1.30	2.55	91.12
+ERR14789044	Caliciviridae	SaV_GI	Sapovirus GI-like	ASSEMBLY	8	2	0	1	0	Caliciviridae_C012,Caliciviridae_C013		Caliciviridae_C012	100.00	67.29	13.45	526.70
+ERR14788864	Caliciviridae	SaV_GI	Sapovirus GI-like	LOCAL_MAPPING	8	0	0	0	3			Caliciviridae_C008	24.45	0.00	0.65	11.35
+ERR14788954	Caliciviridae	SaV_GI	Sapovirus GI-like	ASSEMBLY	8	2	0	0	1	Caliciviridae_C004,Caliciviridae_C003		Caliciviridae_C003	97.92	39.53	9.72	108.05
+ERR14788990	Caliciviridae	SaV_GII	Sapovirus GII-like	LOCAL_MAPPING	3	0	0	0	1			Caliciviridae_C006	25.68	25.15	4.26	121.97
+ERR14788988	Caliciviridae	SaV_GII	Sapovirus GII-like	NONE	3	0	0	0	0			Caliciviridae_C002	7.28	0.00	0.09	3.01
+ERR14788991	Caliciviridae	SaV_GII	Sapovirus GII-like	ASSEMBLY	3	1	0	0	0	Caliciviridae_C006		Caliciviridae_C006	100.00	82.61	27.53	773.45
+ERR14788992	Caliciviridae	SaV_GII	Sapovirus GII-like	LOCAL_MAPPING	3	0	0	0	1			Caliciviridae_C006	22.84	11.70	2.86	45.01
+ERR14788995	Caliciviridae	SaV_GII	Sapovirus GII-like	NONE	3	0	0	0	0			Caliciviridae_C002	0.00	0.00	0.00	0.00
+ERR14789044	Caliciviridae	SaV_GII	Sapovirus GII-like	PARTIAL_MAPPING	3	0	0	1	0			Caliciviridae_C006	54.94	28.61	6.53	433.06
+ERR14788864	Caliciviridae	SaV_GII	Sapovirus GII-like	NONE	3	0	0	0	0			Caliciviridae_C002	0.00	0.00	0.00	0.00
+ERR14788954	Caliciviridae	SaV_GII	Sapovirus GII-like	ASSEMBLY	3	2	0	0	1	Caliciviridae_C002,Caliciviridae_C010		Caliciviridae_C002	99.07	78.51	16.47	220.60
+ERR14788990	Caliciviridae	SaV_GV	Sapovirus GV-like	LOCAL_MAPPING	3	0	0	0	2			Caliciviridae_C007	45.89	28.80	6.99	212.12
+ERR14788988	Caliciviridae	SaV_GV	Sapovirus GV-like	HIGH_BREADTH_MAPPING	3	0	1	1	1		Caliciviridae_C007	Caliciviridae_C007	85.75	0.00	3.45	51.09
+ERR14788991	Caliciviridae	SaV_GV	Sapovirus GV-like	LOCAL_MAPPING	3	0	0	0	2			Caliciviridae_C005	33.99	12.64	3.24	87.66
+ERR14788992	Caliciviridae	SaV_GV	Sapovirus GV-like	PARTIAL_MAPPING	3	0	0	2	1			Caliciviridae_C007	57.04	13.91	3.59	57.02
+ERR14788995	Caliciviridae	SaV_GV	Sapovirus GV-like	LOCAL_MAPPING	3	0	0	0	1			Caliciviridae_C007	20.14	0.00	0.34	12.15
+ERR14789044	Caliciviridae	SaV_GV	Sapovirus GV-like	ASSEMBLY	3	3	0	0	0	Caliciviridae_C005,Caliciviridae_C007,Picornaviridae_C019		Caliciviridae_C005	98.94	65.56	21.46	1474.75
+ERR14788864	Caliciviridae	SaV_GV	Sapovirus GV-like	LOCAL_MAPPING	3	0	0	0	1			Caliciviridae_C007	20.95	0.00	0.24	2.84
+ERR14788954	Caliciviridae	SaV_GV	Sapovirus GV-like	NONE	3	0	0	0	0			Caliciviridae_C005	0.00	0.00	0.00	0.00
+ERR14788990	Parvoviridae	Canine_BoV_like	Canine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788988	Parvoviridae	Canine_BoV_like	Canine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788991	Parvoviridae	Canine_BoV_like	Canine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788992	Parvoviridae	Canine_BoV_like	Canine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788995	Parvoviridae	Canine_BoV_like	Canine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C003	0.00	0.00	0.00	0.00
+ERR14789044	Parvoviridae	Canine_BoV_like	Canine bocavirus-like (reference match)	ASSEMBLY	1	1	0	0	0	Parvoviridae_C003		Parvoviridae_C003	89.20	57.94	11.61	1205.55
+ERR14788864	Parvoviridae	Canine_BoV_like	Canine bocavirus-like (reference match)	LOCAL_MAPPING	1	0	0	0	1			Parvoviridae_C003	26.82	0.00	0.54	14.19
+ERR14788954	Parvoviridae	Canine_BoV_like	Canine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788990	Parvoviridae	HBoV2	Human bocavirus 2-like	ASSEMBLY	3	1	0	0	2	Parvoviridae_C006		Parvoviridae_C006	36.79	16.88	2.76	79.54
+ERR14788988	Parvoviridae	HBoV2	Human bocavirus 2-like	LOCAL_MAPPING	3	0	0	0	2			Parvoviridae_C004	31.19	0.00	0.61	9.02
+ERR14788991	Parvoviridae	HBoV2	Human bocavirus 2-like	LOCAL_MAPPING	3	0	0	0	2			Parvoviridae_C004	16.19	10.95	1.80	46.41
+ERR14788992	Parvoviridae	HBoV2	Human bocavirus 2-like	ASSEMBLY	3	2	0	0	1	Parvoviridae_C006,Parvoviridae_C004		Parvoviridae_C004	65.87	31.65	6.76	99.03
+ERR14788995	Parvoviridae	HBoV2	Human bocavirus 2-like	ASSEMBLY	3	1	0	1	1	Parvoviridae_C005		Parvoviridae_C005	66.61	0.00	1.32	54.67
+ERR14789044	Parvoviridae	HBoV2	Human bocavirus 2-like	ASSEMBLY	3	2	0	0	1	Parvoviridae_C006,Parvoviridae_C004		Parvoviridae_C004	84.08	38.82	10.60	608.63
+ERR14788864	Parvoviridae	HBoV2	Human bocavirus 2-like	HIGH_BREADTH_MAPPING	3	0	1	0	2		Parvoviridae_C004	Parvoviridae_C004	80.82	14.81	4.81	68.11
+ERR14788954	Parvoviridae	HBoV2	Human bocavirus 2-like	LOCAL_MAPPING	3	0	0	0	2			Parvoviridae_C004	34.13	0.00	1.53	6.30
+ERR14788990	Parvoviridae	HBoV3	Human bocavirus 3-like	ASSEMBLY	1	1	0	0	0	Parvoviridae_C001		Parvoviridae_C001	50.86	19.87	7.50	487.87
+ERR14788988	Parvoviridae	HBoV3	Human bocavirus 3-like	PARTIAL_MAPPING	1	0	0	1	0			Parvoviridae_C001	50.70	0.00	1.65	60.10
+ERR14788991	Parvoviridae	HBoV3	Human bocavirus 3-like	LOCAL_MAPPING	1	0	0	0	1			Parvoviridae_C001	46.72	12.24	3.68	232.04
+ERR14788992	Parvoviridae	HBoV3	Human bocavirus 3-like	ASSEMBLY	1	1	0	0	0	Parvoviridae_C001		Parvoviridae_C001	85.48	41.17	9.81	345.11
+ERR14788995	Parvoviridae	HBoV3	Human bocavirus 3-like	ASSEMBLY	1	1	0	0	0	Parvoviridae_C001		Parvoviridae_C001	89.94	29.12	7.11	692.52
+ERR14789044	Parvoviridae	HBoV3	Human bocavirus 3-like	ASSEMBLY	1	1	0	0	0	Parvoviridae_C001		Parvoviridae_C001	36.03	6.76	2.34	339.43
+ERR14788864	Parvoviridae	HBoV3	Human bocavirus 3-like	LOCAL_MAPPING	1	0	0	0	1			Parvoviridae_C001	46.33	0.00	1.53	48.25
+ERR14788954	Parvoviridae	HBoV3	Human bocavirus 3-like	ASSEMBLY	1	1	0	0	0	Parvoviridae_C001		Parvoviridae_C001	88.98	25.86	9.59	124.25
+ERR14788990	Parvoviridae	Porcine_BoV_like	Porcine bocavirus-like (reference match)	ASSEMBLY	1	1	0	0	0	Parvoviridae_C009		Parvoviridae_C009	30.73	0.00	0.39	5.30
+ERR14788988	Parvoviridae	Porcine_BoV_like	Porcine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C009	0.00	0.00	0.00	0.00
+ERR14788991	Parvoviridae	Porcine_BoV_like	Porcine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C009	0.00	0.00	0.00	0.00
+ERR14788992	Parvoviridae	Porcine_BoV_like	Porcine bocavirus-like (reference match)	LOCAL_MAPPING	1	0	0	0	1			Parvoviridae_C009	44.14	0.00	1.54	12.00
+ERR14788995	Parvoviridae	Porcine_BoV_like	Porcine bocavirus-like (reference match)	LOCAL_MAPPING	1	0	0	0	1			Parvoviridae_C009	26.64	0.00	0.27	6.07
+ERR14789044	Parvoviridae	Porcine_BoV_like	Porcine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C009	0.00	0.00	0.00	0.00
+ERR14788864	Parvoviridae	Porcine_BoV_like	Porcine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C009	0.00	0.00	0.00	0.00
+ERR14788954	Parvoviridae	Porcine_BoV_like	Porcine bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C009	0.00	0.00	0.00	0.00
+ERR14788990	Parvoviridae	Rat_parvovirus_like	Rat parvovirus-like (reference match)	NONE	2	0	0	0	0			Parvoviridae_C007	0.00	0.00	0.00	0.00
+ERR14788988	Parvoviridae	Rat_parvovirus_like	Rat parvovirus-like (reference match)	LOCAL_MAPPING	2	0	0	0	1			Parvoviridae_C008	17.65	0.00	0.69	6.01
+ERR14788991	Parvoviridae	Rat_parvovirus_like	Rat parvovirus-like (reference match)	LOCAL_MAPPING	2	0	0	0	1			Parvoviridae_C008	26.43	0.00	0.76	10.31
+ERR14788992	Parvoviridae	Rat_parvovirus_like	Rat parvovirus-like (reference match)	LOCAL_MAPPING	2	0	0	0	1			Parvoviridae_C008	25.27	0.00	0.38	3.00
+ERR14788995	Parvoviridae	Rat_parvovirus_like	Rat parvovirus-like (reference match)	NONE	2	0	0	0	0			Parvoviridae_C007	0.00	0.00	0.00	0.00
+ERR14789044	Parvoviridae	Rat_parvovirus_like	Rat parvovirus-like (reference match)	NONE	2	0	0	0	0			Parvoviridae_C007	0.00	0.00	0.00	0.00
+ERR14788864	Parvoviridae	Rat_parvovirus_like	Rat parvovirus-like (reference match)	NONE	2	0	0	0	0			Parvoviridae_C007	0.00	0.00	0.00	0.00
+ERR14788954	Parvoviridae	Rat_parvovirus_like	Rat parvovirus-like (reference match)	ASSEMBLY	2	2	0	0	0	Parvoviridae_C007,Parvoviridae_C008		Parvoviridae_C007	90.42	52.05	24.29	79.24
+ERR14788990	Parvoviridae	Rodent_BoV_like	Rodent bocavirus-like (reference match)	ASSEMBLY	1	1	0	0	0	Parvoviridae_C002		Parvoviridae_C002	64.28	45.98	14.46	1023.48
+ERR14788988	Parvoviridae	Rodent_BoV_like	Rodent bocavirus-like (reference match)	PARTIAL_MAPPING	1	0	0	1	0			Parvoviridae_C002	60.38	4.33	2.32	87.15
+ERR14788991	Parvoviridae	Rodent_BoV_like	Rodent bocavirus-like (reference match)	ASSEMBLY	1	1	0	0	0	Parvoviridae_C002		Parvoviridae_C002	88.63	64.84	24.09	1804.72
+ERR14788992	Parvoviridae	Rodent_BoV_like	Rodent bocavirus-like (reference match)	ASSEMBLY	1	1	0	0	0	Parvoviridae_C002		Parvoviridae_C002	96.44	82.68	37.22	1524.49
+ERR14788995	Parvoviridae	Rodent_BoV_like	Rodent bocavirus-like (reference match)	ASSEMBLY	1	1	0	0	0	Parvoviridae_C002		Parvoviridae_C002	97.29	71.90	19.23	1956.08
+ERR14789044	Parvoviridae	Rodent_BoV_like	Rodent bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C002	0.00	0.00	0.00	0.00
+ERR14788864	Parvoviridae	Rodent_BoV_like	Rodent bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C002	0.00	0.00	0.00	0.00
+ERR14788954	Parvoviridae	Rodent_BoV_like	Rodent bocavirus-like (reference match)	NONE	1	0	0	0	0			Parvoviridae_C002	0.00	0.00	0.00	0.00
+ERR14788990	Picornaviridae	Aichivirus_A1_like	Aichivirus A1-like	PARTIAL_MAPPING	1	0	0	1	0			Picornaviridae_C009	54.60	25.55	7.84	233.33
+ERR14788988	Picornaviridae	Aichivirus_A1_like	Aichivirus A1-like	PARTIAL_MAPPING	1	0	0	1	0			Picornaviridae_C009	74.14	0.00	2.09	45.08
+ERR14788991	Picornaviridae	Aichivirus_A1_like	Aichivirus A1-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C009	12.56	9.73	1.33	41.25
+ERR14788992	Picornaviridae	Aichivirus_A1_like	Aichivirus A1-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C009	16.31	13.00	3.91	57.02
+ERR14788995	Picornaviridae	Aichivirus_A1_like	Aichivirus A1-like	ASSEMBLY	1	1	0	0	0	Picornaviridae_C009		Picornaviridae_C009	95.80	77.94	26.58	1111.68
+ERR14789044	Picornaviridae	Aichivirus_A1_like	Aichivirus A1-like	NONE	1	0	0	0	0			Picornaviridae_C009	0.00	0.00	0.00	0.00
+ERR14788864	Picornaviridae	Aichivirus_A1_like	Aichivirus A1-like	NONE	1	0	0	0	0			Picornaviridae_C009	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Aichivirus_A1_like	Aichivirus A1-like	NONE	1	0	0	0	0			Picornaviridae_C009	0.00	0.00	0.00	0.00
+ERR14788990	Picornaviridae	Coxsackievirus_A13_like	Coxsackievirus A13-like	NONE	1	0	0	0	0			Picornaviridae_C011	0.00	0.00	0.00	0.00
+ERR14788988	Picornaviridae	Coxsackievirus_A13_like	Coxsackievirus A13-like	NONE	1	0	0	0	0			Picornaviridae_C011	0.00	0.00	0.00	0.00
+ERR14788991	Picornaviridae	Coxsackievirus_A13_like	Coxsackievirus A13-like	NONE	1	0	0	0	0			Picornaviridae_C011	0.00	0.00	0.00	0.00
+ERR14788992	Picornaviridae	Coxsackievirus_A13_like	Coxsackievirus A13-like	NONE	1	0	0	0	0			Picornaviridae_C011	0.00	0.00	0.00	0.00
+ERR14788995	Picornaviridae	Coxsackievirus_A13_like	Coxsackievirus A13-like	NONE	1	0	0	0	0			Picornaviridae_C011	0.00	0.00	0.00	0.00
+ERR14789044	Picornaviridae	Coxsackievirus_A13_like	Coxsackievirus A13-like	NONE	1	0	0	0	0			Picornaviridae_C011	0.00	0.00	0.00	0.00
+ERR14788864	Picornaviridae	Coxsackievirus_A13_like	Coxsackievirus A13-like	NONE	1	0	0	0	0			Picornaviridae_C011	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Coxsackievirus_A13_like	Coxsackievirus A13-like	ASSEMBLY	1	1	0	0	0	Picornaviridae_C011		Picornaviridae_C011	92.90	34.53	9.96	48.62
+ERR14788990	Picornaviridae	Coxsackievirus_A19_like	Coxsackievirus A19-like	NONE	3	0	0	0	0			Picornaviridae_C005	0.00	0.00	0.00	0.00
+ERR14788988	Picornaviridae	Coxsackievirus_A19_like	Coxsackievirus A19-like	LOCAL_MAPPING	3	0	0	0	1			Picornaviridae_C016	34.63	0.00	0.44	3.01
+ERR14788991	Picornaviridae	Coxsackievirus_A19_like	Coxsackievirus A19-like	NONE	3	0	0	0	0			Picornaviridae_C005	0.00	0.00	0.00	0.00
+ERR14788992	Picornaviridae	Coxsackievirus_A19_like	Coxsackievirus A19-like	NONE	3	0	0	0	0			Picornaviridae_C005	0.00	0.00	0.00	0.00
+ERR14788995	Picornaviridae	Coxsackievirus_A19_like	Coxsackievirus A19-like	LOCAL_MAPPING	3	0	0	0	1			Picornaviridae_C016	28.31	0.00	1.14	18.22
+ERR14789044	Picornaviridae	Coxsackievirus_A19_like	Coxsackievirus A19-like	NONE	3	0	0	0	0			Picornaviridae_C005	0.00	0.00	0.00	0.00
+ERR14788864	Picornaviridae	Coxsackievirus_A19_like	Coxsackievirus A19-like	NONE	3	0	0	0	0			Picornaviridae_C005	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Coxsackievirus_A19_like	Coxsackievirus A19-like	ASSEMBLY	3	3	0	0	0	Picornaviridae_C005,Picornaviridae_C006,Picornaviridae_C016		Picornaviridae_C005	100.00	93.77	29.37	122.45
+ERR14788990	Picornaviridae	Aichivirus_A_like	Divergent Aichivirus A-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C003	17.13	12.20	4.50	185.60
+ERR14788988	Picornaviridae	Aichivirus_A_like	Divergent Aichivirus A-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C003	11.06	0.00	0.16	3.01
+ERR14788991	Picornaviridae	Aichivirus_A_like	Divergent Aichivirus A-like	NONE	1	0	0	0	0			Picornaviridae_C003	0.00	0.00	0.00	0.00
+ERR14788992	Picornaviridae	Aichivirus_A_like	Divergent Aichivirus A-like	NONE	1	0	0	0	0			Picornaviridae_C003	8.45	7.48	1.22	30.01
+ERR14788995	Picornaviridae	Aichivirus_A_like	Divergent Aichivirus A-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C003	19.54	10.76	1.94	139.72
+ERR14789044	Picornaviridae	Aichivirus_A_like	Divergent Aichivirus A-like	NONE	1	0	0	0	0			Picornaviridae_C003	6.49	0.00	0.06	11.70
+ERR14788864	Picornaviridae	Aichivirus_A_like	Divergent Aichivirus A-like	NONE	1	0	0	0	0			Picornaviridae_C003	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Aichivirus_A_like	Divergent Aichivirus A-like	ASSEMBLY	1	1	0	0	0	Picornaviridae_C003		Picornaviridae_C003	100.00	71.15	20.16	184.58
+ERR14788990	Picornaviridae	Enterovirus_A_like	Divergent Enterovirus A-like	NONE	3	0	0	0	0			Picornaviridae_C013	0.00	0.00	0.00	0.00
+ERR14788988	Picornaviridae	Enterovirus_A_like	Divergent Enterovirus A-like	NONE	3	0	0	0	0			Picornaviridae_C013	0.00	0.00	0.00	0.00
+ERR14788991	Picornaviridae	Enterovirus_A_like	Divergent Enterovirus A-like	NONE	3	0	0	0	0			Picornaviridae_C013	0.00	0.00	0.00	0.00
+ERR14788992	Picornaviridae	Enterovirus_A_like	Divergent Enterovirus A-like	NONE	3	0	0	0	0			Picornaviridae_C013	0.00	0.00	0.00	0.00
+ERR14788995	Picornaviridae	Enterovirus_A_like	Divergent Enterovirus A-like	NONE	3	0	0	0	0			Picornaviridae_C013	0.00	0.00	0.00	0.00
+ERR14789044	Picornaviridae	Enterovirus_A_like	Divergent Enterovirus A-like	NONE	3	0	0	0	0			Picornaviridae_C013	0.00	0.00	0.00	0.00
+ERR14788864	Picornaviridae	Enterovirus_A_like	Divergent Enterovirus A-like	NONE	3	0	0	0	0			Picornaviridae_C013	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Enterovirus_A_like	Divergent Enterovirus A-like	ASSEMBLY	3	3	0	0	0	Picornaviridae_C013,Picornaviridae_C014,Picornaviridae_C015		Picornaviridae_C013	98.43	65.42	15.54	54.92
+ERR14788990	Picornaviridae	Enterovirus_B_like	Divergent Enterovirus B-like	NONE	3	0	0	0	0			Picornaviridae_C001	0.00	0.00	0.00	0.00
+ERR14788988	Picornaviridae	Enterovirus_B_like	Divergent Enterovirus B-like	NONE	3	0	0	0	0			Picornaviridae_C001	0.00	0.00	0.00	0.00
+ERR14788991	Picornaviridae	Enterovirus_B_like	Divergent Enterovirus B-like	NONE	3	0	0	0	0			Picornaviridae_C001	0.00	0.00	0.00	0.00
+ERR14788992	Picornaviridae	Enterovirus_B_like	Divergent Enterovirus B-like	LOCAL_MAPPING	3	0	0	0	1			Picornaviridae_C010	11.82	11.82	2.14	33.01
+ERR14788995	Picornaviridae	Enterovirus_B_like	Divergent Enterovirus B-like	NONE	3	0	0	0	0			Picornaviridae_C001	0.00	0.00	0.00	0.00
+ERR14789044	Picornaviridae	Enterovirus_B_like	Divergent Enterovirus B-like	NONE	3	0	0	0	0			Picornaviridae_C001	0.00	0.00	0.00	0.00
+ERR14788864	Picornaviridae	Enterovirus_B_like	Divergent Enterovirus B-like	NONE	3	0	0	0	0			Picornaviridae_C001	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Enterovirus_B_like	Divergent Enterovirus B-like	ASSEMBLY	3	3	0	0	0	Picornaviridae_C001,Picornaviridae_C002,Picornaviridae_C010		Picornaviridae_C010	100.00	96.97	78.09	1334.39
+ERR14788990	Picornaviridae	Echovirus_E18_like	Echovirus 18-like	NONE	1	0	0	0	0			Picornaviridae_C012	0.00	0.00	0.00	0.00
+ERR14788988	Picornaviridae	Echovirus_E18_like	Echovirus 18-like	NONE	1	0	0	0	0			Picornaviridae_C012	0.00	0.00	0.00	0.00
+ERR14788991	Picornaviridae	Echovirus_E18_like	Echovirus 18-like	NONE	1	0	0	0	0			Picornaviridae_C012	0.00	0.00	0.00	0.00
+ERR14788992	Picornaviridae	Echovirus_E18_like	Echovirus 18-like	NONE	1	0	0	0	0			Picornaviridae_C012	0.00	0.00	0.00	0.00
+ERR14788995	Picornaviridae	Echovirus_E18_like	Echovirus 18-like	NONE	1	0	0	0	0			Picornaviridae_C012	0.00	0.00	0.00	0.00
+ERR14789044	Picornaviridae	Echovirus_E18_like	Echovirus 18-like	NONE	1	0	0	0	0			Picornaviridae_C012	0.00	0.00	0.00	0.00
+ERR14788864	Picornaviridae	Echovirus_E18_like	Echovirus 18-like	NONE	1	0	0	0	0			Picornaviridae_C012	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Echovirus_E18_like	Echovirus 18-like	ASSEMBLY	1	1	0	0	0	Picornaviridae_C012		Picornaviridae_C012	88.76	65.16	13.45	52.22
+ERR14788990	Picornaviridae	Echovirus_E9_like	Echovirus 9-like	NONE	1	0	0	0	0			Picornaviridae_C008	0.00	0.00	0.00	0.00
+ERR14788988	Picornaviridae	Echovirus_E9_like	Echovirus 9-like	NONE	1	0	0	0	0			Picornaviridae_C008	0.00	0.00	0.00	0.00
+ERR14788991	Picornaviridae	Echovirus_E9_like	Echovirus 9-like	NONE	1	0	0	0	0			Picornaviridae_C008	0.00	0.00	0.00	0.00
+ERR14788992	Picornaviridae	Echovirus_E9_like	Echovirus 9-like	NONE	1	0	0	0	0			Picornaviridae_C008	0.00	0.00	0.00	0.00
+ERR14788995	Picornaviridae	Echovirus_E9_like	Echovirus 9-like	NONE	1	0	0	0	0			Picornaviridae_C008	0.00	0.00	0.00	0.00
+ERR14789044	Picornaviridae	Echovirus_E9_like	Echovirus 9-like	NONE	1	0	0	0	0			Picornaviridae_C008	0.00	0.00	0.00	0.00
+ERR14788864	Picornaviridae	Echovirus_E9_like	Echovirus 9-like	NONE	1	0	0	0	0			Picornaviridae_C008	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Echovirus_E9_like	Echovirus 9-like	ASSEMBLY	1	1	0	0	0	Picornaviridae_C008		Picornaviridae_C008	96.33	84.14	33.07	190.88
+ERR14788990	Picornaviridae	Enterovirus_unresolved	Enterovirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C018	0.00	0.00	0.00	0.00
+ERR14788988	Picornaviridae	Enterovirus_unresolved	Enterovirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C018	0.00	0.00	0.00	0.00
+ERR14788991	Picornaviridae	Enterovirus_unresolved	Enterovirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C018	0.00	0.00	0.00	0.00
+ERR14788992	Picornaviridae	Enterovirus_unresolved	Enterovirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C018	0.00	0.00	0.00	0.00
+ERR14788995	Picornaviridae	Enterovirus_unresolved	Enterovirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C018	0.00	0.00	0.00	0.00
+ERR14789044	Picornaviridae	Enterovirus_unresolved	Enterovirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C018	0.00	0.00	0.00	0.00
+ERR14788864	Picornaviridae	Enterovirus_unresolved	Enterovirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C018	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Enterovirus_unresolved	Enterovirus-like, unresolved	ASSEMBLY	1	1	0	0	0	Picornaviridae_C018		Picornaviridae_C018	100.00	35.98	10.56	24.31
+ERR14788990	Picornaviridae	Kobuvirus_like	Kobuvirus-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C004	35.44	34.66	19.85	790.14
+ERR14788988	Picornaviridae	Kobuvirus_like	Kobuvirus-like	ASSEMBLY	1	1	0	0	0	Picornaviridae_C004		Picornaviridae_C004	99.19	70.95	17.36	372.64
+ERR14788991	Picornaviridae	Kobuvirus_like	Kobuvirus-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C004	17.20	14.25	2.56	103.13
+ERR14788992	Picornaviridae	Kobuvirus_like	Kobuvirus-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C004	46.99	24.04	6.15	117.04
+ERR14788995	Picornaviridae	Kobuvirus_like	Kobuvirus-like	HIGH_BREADTH_MAPPING	1	0	1	0	0		Picornaviridae_C004	Picornaviridae_C004	98.61	83.65	30.68	1688.79
+ERR14789044	Picornaviridae	Kobuvirus_like	Kobuvirus-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C004	34.26	18.65	3.16	257.50
+ERR14788864	Picornaviridae	Kobuvirus_like	Kobuvirus-like	NONE	1	0	0	0	0			Picornaviridae_C004	9.41	0.00	0.31	5.68
+ERR14788954	Picornaviridae	Kobuvirus_like	Kobuvirus-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C004	22.78	7.75	2.24	17.11
+ERR14788990	Picornaviridae	Picornavirus_unresolved	Picornavirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C007	0.00	0.00	0.00	0.00
+ERR14788988	Picornaviridae	Picornavirus_unresolved	Picornavirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C007	0.00	0.00	0.00	0.00
+ERR14788991	Picornaviridae	Picornavirus_unresolved	Picornavirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C007	0.00	0.00	0.00	0.00
+ERR14788992	Picornaviridae	Picornavirus_unresolved	Picornavirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C007	0.00	0.00	0.00	0.00
+ERR14788995	Picornaviridae	Picornavirus_unresolved	Picornavirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C007	0.00	0.00	0.00	0.00
+ERR14789044	Picornaviridae	Picornavirus_unresolved	Picornavirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C007	0.00	0.00	0.00	0.00
+ERR14788864	Picornaviridae	Picornavirus_unresolved	Picornavirus-like, unresolved	NONE	1	0	0	0	0			Picornaviridae_C007	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Picornavirus_unresolved	Picornavirus-like, unresolved	ASSEMBLY	1	1	0	0	0	Picornaviridae_C007		Picornaviridae_C007	96.22	84.74	73.82	445.70
+ERR14788990	Picornaviridae	Salivirus_A_like	Salivirus A-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C017	33.60	0.00	1.02	21.21
+ERR14788988	Picornaviridae	Salivirus_A_like	Salivirus A-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C017	31.36	0.00	0.63	6.01
+ERR14788991	Picornaviridae	Salivirus_A_like	Salivirus A-like	ASSEMBLY	1	1	0	0	0	Picornaviridae_C017		Picornaviridae_C017	100.00	84.32	17.69	237.19
+ERR14788992	Picornaviridae	Salivirus_A_like	Salivirus A-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C017	24.01	0.00	0.48	3.00
+ERR14788995	Picornaviridae	Salivirus_A_like	Salivirus A-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C017	38.26	0.00	0.40	12.15
+ERR14789044	Picornaviridae	Salivirus_A_like	Salivirus A-like	LOCAL_MAPPING	1	0	0	0	1			Picornaviridae_C017	27.33	0.00	0.44	11.70
+ERR14788864	Picornaviridae	Salivirus_A_like	Salivirus A-like	NONE	1	0	0	0	0			Picornaviridae_C017	0.00	0.00	0.00	0.00
+ERR14788954	Picornaviridae	Salivirus_A_like	Salivirus A-like	NONE	1	0	0	0	0			Picornaviridae_C017	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	RVA_segment_1	Rotavirus A | segment 1	ASSEMBLY	4	1	0	0	2	Sedoreoviridae_C012		Sedoreoviridae_C012	45.68	23.26	7.43	169.70
+ERR14788988	Sedoreoviridae	RVA_segment_1	Rotavirus A | segment 1	NONE	4	0	0	0	0			Sedoreoviridae_C012	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	RVA_segment_1	Rotavirus A | segment 1	ASSEMBLY	4	4	0	0	0	Sedoreoviridae_C012,Sedoreoviridae_C001,Sedoreoviridae_C011,Sedoreoviridae_C019		Sedoreoviridae_C019	96.30	60.58	15.16	330.01
+ERR14788992	Sedoreoviridae	RVA_segment_1	Rotavirus A | segment 1	ASSEMBLY	4	3	0	1	0	Sedoreoviridae_C012,Sedoreoviridae_C001,Sedoreoviridae_C011		Sedoreoviridae_C012	92.72	45.37	17.44	261.08
+ERR14788995	Sedoreoviridae	RVA_segment_1	Rotavirus A | segment 1	LOCAL_MAPPING	4	0	0	0	1			Sedoreoviridae_C011	22.05	0.00	0.22	6.07
+ERR14789044	Sedoreoviridae	RVA_segment_1	Rotavirus A | segment 1	NONE	4	0	0	0	0			Sedoreoviridae_C012	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	RVA_segment_1	Rotavirus A | segment 1	NONE	4	0	0	0	0			Sedoreoviridae_C012	0.00	0.00	0.00	0.00
+ERR14788954	Sedoreoviridae	RVA_segment_1	Rotavirus A | segment 1	NONE	4	0	0	0	0			Sedoreoviridae_C012	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	RVA_segment_2	Rotavirus A | segment 2	LOCAL_MAPPING	2	0	0	0	1			Sedoreoviridae_C014	30.64	3.05	1.81	42.42
+ERR14788988	Sedoreoviridae	RVA_segment_2	Rotavirus A | segment 2	NONE	2	0	0	0	0			Sedoreoviridae_C014	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	RVA_segment_2	Rotavirus A | segment 2	ASSEMBLY	2	1	0	0	1	Sedoreoviridae_C014		Sedoreoviridae_C014	98.81	68.17	16.34	340.32
+ERR14788992	Sedoreoviridae	RVA_segment_2	Rotavirus A | segment 2	ASSEMBLY	2	2	0	0	0	Sedoreoviridae_C014,Sedoreoviridae_C009		Sedoreoviridae_C014	99.83	90.63	45.64	567.18
+ERR14788995	Sedoreoviridae	RVA_segment_2	Rotavirus A | segment 2	LOCAL_MAPPING	2	0	0	0	1			Sedoreoviridae_C014	17.72	0.00	0.27	6.07
+ERR14789044	Sedoreoviridae	RVA_segment_2	Rotavirus A | segment 2	NONE	2	0	0	0	0			Sedoreoviridae_C014	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	RVA_segment_2	Rotavirus A | segment 2	NONE	2	0	0	0	0			Sedoreoviridae_C014	0.00	0.00	0.00	0.00
+ERR14788954	Sedoreoviridae	RVA_segment_2	Rotavirus A | segment 2	NONE	2	0	0	0	0			Sedoreoviridae_C014	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	RVA_segment_3	Rotavirus A | segment 3	ASSEMBLY	6	2	0	1	1	Sedoreoviridae_C004,Sedoreoviridae_C013		Sedoreoviridae_C013	81.30	49.61	20.09	705.30
+ERR14788988	Sedoreoviridae	RVA_segment_3	Rotavirus A | segment 3	NONE	6	0	0	0	0			Sedoreoviridae_C004	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	RVA_segment_3	Rotavirus A | segment 3	ASSEMBLY	6	2	0	1	3	Sedoreoviridae_C004,Sedoreoviridae_C022		Sedoreoviridae_C004	78.42	71.92	43.75	1572.68
+ERR14788992	Sedoreoviridae	RVA_segment_3	Rotavirus A | segment 3	ASSEMBLY	6	5	0	0	1	Sedoreoviridae_C004,Sedoreoviridae_C013,Sedoreoviridae_C017,Sedoreoviridae_C018,Sedoreoviridae_C023		Sedoreoviridae_C018	95.35	73.89	36.26	753.24
+ERR14788995	Sedoreoviridae	RVA_segment_3	Rotavirus A | segment 3	LOCAL_MAPPING	6	0	0	0	2			Sedoreoviridae_C022	42.78	0.00	1.21	72.90
+ERR14789044	Sedoreoviridae	RVA_segment_3	Rotavirus A | segment 3	NONE	6	0	0	0	0			Sedoreoviridae_C004	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	RVA_segment_3	Rotavirus A | segment 3	LOCAL_MAPPING	6	0	0	0	2			Sedoreoviridae_C004	19.38	0.00	0.31	5.68
+ERR14788954	Sedoreoviridae	RVA_segment_3	Rotavirus A | segment 3	NONE	6	0	0	0	0			Sedoreoviridae_C004	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	RVA_segment_4	Rotavirus A | segment 4	LOCAL_MAPPING	4	0	0	0	1			Sedoreoviridae_C002	23.11	0.00	0.50	21.21
+ERR14788988	Sedoreoviridae	RVA_segment_4	Rotavirus A | segment 4	NONE	4	0	0	0	0			Sedoreoviridae_C002	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	RVA_segment_4	Rotavirus A | segment 4	ASSEMBLY	4	2	0	0	1	Sedoreoviridae_C020,Sedoreoviridae_C021		Sedoreoviridae_C021	87.03	43.51	9.52	113.44
+ERR14788992	Sedoreoviridae	RVA_segment_4	Rotavirus A | segment 4	ASSEMBLY	4	2	0	1	0	Sedoreoviridae_C002,Sedoreoviridae_C016		Sedoreoviridae_C002	75.58	37.96	13.50	327.11
+ERR14788995	Sedoreoviridae	RVA_segment_4	Rotavirus A | segment 4	NONE	4	0	0	0	0			Sedoreoviridae_C002	0.00	0.00	0.00	0.00
+ERR14789044	Sedoreoviridae	RVA_segment_4	Rotavirus A | segment 4	NONE	4	0	0	0	0			Sedoreoviridae_C002	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	RVA_segment_4	Rotavirus A | segment 4	NONE	4	0	0	0	0			Sedoreoviridae_C002	0.00	0.00	0.00	0.00
+ERR14788954	Sedoreoviridae	RVA_segment_4	Rotavirus A | segment 4	NONE	4	0	0	0	0			Sedoreoviridae_C002	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	RVA_segment_7	Rotavirus A | segment 7	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C005	20.05	13.56	2.26	63.64
+ERR14788988	Sedoreoviridae	RVA_segment_7	Rotavirus A | segment 7	NONE	1	0	0	0	0			Sedoreoviridae_C005	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	RVA_segment_7	Rotavirus A | segment 7	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C005	43.89	12.25	3.06	123.75
+ERR14788992	Sedoreoviridae	RVA_segment_7	Rotavirus A | segment 7	ASSEMBLY	1	1	0	0	0	Sedoreoviridae_C005		Sedoreoviridae_C005	94.97	68.03	29.93	522.17
+ERR14788995	Sedoreoviridae	RVA_segment_7	Rotavirus A | segment 7	NONE	1	0	0	0	0			Sedoreoviridae_C005	5.54	0.00	0.06	6.07
+ERR14789044	Sedoreoviridae	RVA_segment_7	Rotavirus A | segment 7	NONE	1	0	0	0	0			Sedoreoviridae_C005	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	RVA_segment_7	Rotavirus A | segment 7	NONE	1	0	0	0	0			Sedoreoviridae_C005	0.00	0.00	0.00	0.00
+ERR14788954	Sedoreoviridae	RVA_segment_7	Rotavirus A | segment 7	NONE	1	0	0	0	0			Sedoreoviridae_C005	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	RVA_segment_9	Rotavirus A | segment 9	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C003	19.57	1.58	0.98	42.42
+ERR14788988	Sedoreoviridae	RVA_segment_9	Rotavirus A | segment 9	NONE	1	0	0	0	0			Sedoreoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	RVA_segment_9	Rotavirus A | segment 9	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C003	46.83	21.16	7.81	309.38
+ERR14788992	Sedoreoviridae	RVA_segment_9	Rotavirus A | segment 9	ASSEMBLY	1	1	0	0	0	Sedoreoviridae_C003		Sedoreoviridae_C003	90.87	46.74	39.03	921.30
+ERR14788995	Sedoreoviridae	RVA_segment_9	Rotavirus A | segment 9	NONE	1	0	0	0	0			Sedoreoviridae_C003	0.00	0.00	0.00	0.00
+ERR14789044	Sedoreoviridae	RVA_segment_9	Rotavirus A | segment 9	NONE	1	0	0	0	0			Sedoreoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	RVA_segment_9	Rotavirus A | segment 9	NONE	1	0	0	0	0			Sedoreoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788954	Sedoreoviridae	RVA_segment_9	Rotavirus A | segment 9	NONE	1	0	0	0	0			Sedoreoviridae_C003	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	RVC_segment_2	Rotavirus C | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C006	0.00	0.00	0.00	0.00
+ERR14788988	Sedoreoviridae	RVC_segment_2	Rotavirus C | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C006	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	RVC_segment_2	Rotavirus C | segment 2	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C006	13.80	0.00	0.32	10.31
+ERR14788992	Sedoreoviridae	RVC_segment_2	Rotavirus C | segment 2	ASSEMBLY	1	1	0	0	0	Sedoreoviridae_C006		Sedoreoviridae_C006	100.00	25.02	8.29	132.04
+ERR14788995	Sedoreoviridae	RVC_segment_2	Rotavirus C | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C006	0.00	0.00	0.00	0.00
+ERR14789044	Sedoreoviridae	RVC_segment_2	Rotavirus C | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C006	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	RVC_segment_2	Rotavirus C | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C006	0.00	0.00	0.00	0.00
+ERR14788954	Sedoreoviridae	RVC_segment_2	Rotavirus C | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C006	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	RVC_segment_3	Rotavirus C | segment 3	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C008	14.20	0.00	0.85	26.51
+ERR14788988	Sedoreoviridae	RVC_segment_3	Rotavirus C | segment 3	NONE	1	0	0	0	0			Sedoreoviridae_C008	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	RVC_segment_3	Rotavirus C | segment 3	NONE	1	0	0	0	0			Sedoreoviridae_C008	0.00	0.00	0.00	0.00
+ERR14788992	Sedoreoviridae	RVC_segment_3	Rotavirus C | segment 3	ASSEMBLY	1	1	0	0	0	Sedoreoviridae_C008		Sedoreoviridae_C008	95.94	23.06	7.07	111.04
+ERR14788995	Sedoreoviridae	RVC_segment_3	Rotavirus C | segment 3	NONE	1	0	0	0	0			Sedoreoviridae_C008	0.00	0.00	0.00	0.00
+ERR14789044	Sedoreoviridae	RVC_segment_3	Rotavirus C | segment 3	NONE	1	0	0	0	0			Sedoreoviridae_C008	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	RVC_segment_3	Rotavirus C | segment 3	NONE	1	0	0	0	0			Sedoreoviridae_C008	0.00	0.00	0.00	0.00
+ERR14788954	Sedoreoviridae	RVC_segment_3	Rotavirus C | segment 3	NONE	1	0	0	0	0			Sedoreoviridae_C008	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	RVC_segment_4	Rotavirus C | segment 4	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C015	28.79	2.21	1.90	26.51
+ERR14788988	Sedoreoviridae	RVC_segment_4	Rotavirus C | segment 4	NONE	1	0	0	0	0			Sedoreoviridae_C015	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	RVC_segment_4	Rotavirus C | segment 4	NONE	1	0	0	0	0			Sedoreoviridae_C015	0.00	0.00	0.00	0.00
+ERR14788992	Sedoreoviridae	RVC_segment_4	Rotavirus C | segment 4	ASSEMBLY	1	1	0	0	0	Sedoreoviridae_C015		Sedoreoviridae_C015	100.00	47.32	11.61	108.03
+ERR14788995	Sedoreoviridae	RVC_segment_4	Rotavirus C | segment 4	NONE	1	0	0	0	0			Sedoreoviridae_C015	0.00	0.00	0.00	0.00
+ERR14789044	Sedoreoviridae	RVC_segment_4	Rotavirus C | segment 4	NONE	1	0	0	0	0			Sedoreoviridae_C015	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	RVC_segment_4	Rotavirus C | segment 4	NONE	1	0	0	0	0			Sedoreoviridae_C015	0.00	0.00	0.00	0.00
+ERR14788954	Sedoreoviridae	RVC_segment_4	Rotavirus C | segment 4	NONE	1	0	0	0	0			Sedoreoviridae_C015	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	Rotavirus_alpha_like_segment_1	Rotavirus alphagastroenteritidis-like | segment 1	NONE	1	0	0	0	0			Sedoreoviridae_C007	0.00	0.00	0.00	0.00
+ERR14788988	Sedoreoviridae	Rotavirus_alpha_like_segment_1	Rotavirus alphagastroenteritidis-like | segment 1	NONE	1	0	0	0	0			Sedoreoviridae_C007	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	Rotavirus_alpha_like_segment_1	Rotavirus alphagastroenteritidis-like | segment 1	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C007	47.72	14.28	3.37	77.35
+ERR14788992	Sedoreoviridae	Rotavirus_alpha_like_segment_1	Rotavirus alphagastroenteritidis-like | segment 1	ASSEMBLY	1	1	0	0	0	Sedoreoviridae_C007		Sedoreoviridae_C007	94.33	54.57	19.19	291.09
+ERR14788995	Sedoreoviridae	Rotavirus_alpha_like_segment_1	Rotavirus alphagastroenteritidis-like | segment 1	NONE	1	0	0	0	0			Sedoreoviridae_C007	0.00	0.00	0.00	0.00
+ERR14789044	Sedoreoviridae	Rotavirus_alpha_like_segment_1	Rotavirus alphagastroenteritidis-like | segment 1	NONE	1	0	0	0	0			Sedoreoviridae_C007	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	Rotavirus_alpha_like_segment_1	Rotavirus alphagastroenteritidis-like | segment 1	NONE	1	0	0	0	0			Sedoreoviridae_C007	9.27	0.00	0.37	5.68
+ERR14788954	Sedoreoviridae	Rotavirus_alpha_like_segment_1	Rotavirus alphagastroenteritidis-like | segment 1	NONE	1	0	0	0	0			Sedoreoviridae_C007	0.00	0.00	0.00	0.00
+ERR14788990	Sedoreoviridae	Rotavirus_alpha_like_segment_2	Rotavirus alphagastroenteritidis-like | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C010	0.00	0.00	0.00	0.00
+ERR14788988	Sedoreoviridae	Rotavirus_alpha_like_segment_2	Rotavirus alphagastroenteritidis-like | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C010	0.00	0.00	0.00	0.00
+ERR14788991	Sedoreoviridae	Rotavirus_alpha_like_segment_2	Rotavirus alphagastroenteritidis-like | segment 2	ASSEMBLY	1	1	0	0	0	Sedoreoviridae_C010		Sedoreoviridae_C010	61.37	19.05	6.30	154.69
+ERR14788992	Sedoreoviridae	Rotavirus_alpha_like_segment_2	Rotavirus alphagastroenteritidis-like | segment 2	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C010	48.76	35.56	26.42	372.12
+ERR14788995	Sedoreoviridae	Rotavirus_alpha_like_segment_2	Rotavirus alphagastroenteritidis-like | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C010	0.00	0.00	0.00	0.00
+ERR14789044	Sedoreoviridae	Rotavirus_alpha_like_segment_2	Rotavirus alphagastroenteritidis-like | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C010	0.00	0.00	0.00	0.00
+ERR14788864	Sedoreoviridae	Rotavirus_alpha_like_segment_2	Rotavirus alphagastroenteritidis-like | segment 2	LOCAL_MAPPING	1	0	0	0	1			Sedoreoviridae_C010	16.07	0.00	0.26	5.68
+ERR14788954	Sedoreoviridae	Rotavirus_alpha_like_segment_2	Rotavirus alphagastroenteritidis-like | segment 2	NONE	1	0	0	0	0			Sedoreoviridae_C010	0.00	0.00	0.00	0.00
