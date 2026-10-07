@@ -1,33 +1,38 @@
 # Wastewater Hybrid-Capture Viromics
 
-A reproducible workflow for **viral detection, genome reconstruction, phylogenetic placement, and diagnostic oligonucleotide mismatch surveillance** from hybrid-capture wastewater metagenomic sequencing.
+A reproducible workflow for **target-enriched wastewater viromics**, integrating de novo viral discovery, assembly-supported detection, competitive mapping, sequence annotation, multisample evidence integration, genome reconstruction, phylogenetic analysis, and diagnostic oligonucleotide mismatch surveillance.
 
-This project uses a publicly available hybrid-capture wastewater sequencing library from **PRJEB87273** and demonstrates an end-to-end computational workflow for GastroCap-enriched viromics.
+The project uses publicly available hybrid-capture wastewater sequencing data from **ENA project PRJEB87273** and was developed as a reproducible computational portfolio for wastewater viral metagenomics.
 
 ---
 
 ## Overview
 
-The workflow integrates:
+Hybrid-capture sequencing can substantially increase sequencing support for targeted viral genomes in wastewater, but enrichment also introduces important analytical considerations.
 
-- putative PCR duplicate removal
-- read quality control and trimming
-- human-read removal
-- de novo metagenomic assembly
-- viral contig identification with geNomad
-- target-virus identification using nucleotide similarity searches
-- candidate-contig read-back validation
-- competitive reference mapping
-- genome breadth and depth estimation
-- normalized sequencing support
-- reference-guided consensus reconstruction
-- genotype and phylogenetic placement
-- in-silico diagnostic primer/probe mismatch surveillance
+This workflow therefore combines complementary evidence from:
+
+- putative PCR duplicate removal;
+- read quality control and human-read removal;
+- de novo metagenomic assembly;
+- viral classification with geNomad;
+- target-family filtering;
+- assembly-supported read-back;
+- within-family sequence clustering;
+- local viral nucleotide annotation;
+- competitive multisample read mapping;
+- taxonomy reconciliation;
+- biological-group evidence integration;
+- reference-guided consensus reconstruction;
+- genotype and phylogenetic placement;
+- in-silico diagnostic primer/probe mismatch surveillance.
+
+The automated **Snakemake multisample workflow** runs from raw paired-end reads through the final portfolio evidence heatmap.
 
 ```text
 FASTQ
   │
-  ├── Putative PCR deduplication
+  ├── Putative PCR duplicate removal
   │
   ├── QC / trimming
   │
@@ -35,170 +40,337 @@ FASTQ
   │
   ├── De novo assembly
   │
-  ├── Viral classification
+  ├── geNomad viral classification
   │
-  ├── Target-virus identification
+  ├── Strict target-family extraction
   │
-  ├── Candidate read-back validation
+  ├── Assembly-supported read-back
   │
-  ├── Competitive reference mapping
-  │
-  ├── Genome breadth / depth
-  │
-  ├── Normalized read support
-  │
-  ├── Consensus reconstruction
-  │
-  ├── Genotype / phylogenetic placement
-  │
-  └── Diagnostic primer/probe mismatch surveillance
+  └── Per-sample supported viral contigs
+          │
+          ├── Multisample supported-contig pool
+          │
+          ├── Within-family sequence clustering
+          │
+          ├── Representative-sequence extraction
+          │
+          ├── nt_viruses annotation
+          │     ├── megablast
+          │     └── sensitive blastn follow-up
+          │
+          ├── Competitive all-cluster mapping
+          │
+          ├── Taxonomy reconciliation
+          │
+          ├── Biological grouping
+          │
+          ├── Cross-sample evidence integration
+          │
+          └── Portfolio evidence heatmap
 ```
+
+A complementary **single-sample deep-dive branch** performs reference-guided consensus reconstruction, astrovirus typing / phylogenetic placement, and diagnostic primer/probe mismatch analysis.
 
 ---
 
 ## Dataset
 
-Primary hybrid-capture library:
+The workflow uses hybrid-capture wastewater libraries from:
+
+- **ENA project:** `PRJEB87273`
+- **Study:** Global urban virome
+- **Capture panel:** GastroCap
+- **Sequencing:** paired-end Illumina sequencing
+
+The multisample analysis includes eight capture libraries:
+
+| Run | Sample | Raw read pairs |
+|---|---|---:|
+| `ERR14788990` | RD-370 | 199,495 |
+| `ERR14788988` | RD-304 | 345,630 |
+| `ERR14788991` | RD-387 | 206,004 |
+| `ERR14788992` | RD-398 | 349,193 |
+| `ERR14788995` | RD-462 | 180,575 |
+| `ERR14789044` | FI-OU-438 | 96,959 |
+| `ERR14788864` | PL-PL-106 | 374,402 |
+| `ERR14788954` | CM1802 | 1,200,895 |
+
+The anchor sample used for detailed genome reconstruction is:
 
 | Field | Value |
 |---|---|
-| Project | `PRJEB87273` |
 | Run | `ERR14788990` |
-| BioSample | `SAMEA117873011` |
+| Sample | RD-370 |
 | Location | Copenhagen, Denmark |
 | Collection date | 2018-03-01 |
-| Sequencing | Paired-end Illumina MiSeq |
 | Raw read pairs | 199,495 |
 
-The raw sequencing data are publicly available and are **not redistributed in this repository**.
+Raw sequencing data are publicly available through ENA and are **not redistributed in this repository**.
 
 ---
 
-## Workflow
+## Target viral families
 
-### 1. Putative PCR duplicate removal
+The target-family screening step focuses on the viral families represented in the GastroCap enrichment design:
 
-Raw paired-end reads were processed with **CD-HIT-DUP** before trimming.
+- Adenoviridae
+- Astroviridae
+- Caliciviridae
+- Hepeviridae
+- Parvoviridae
+- Picornaviridae
+- Sedoreoviridae
+- Spinareoviridae
 
-A 150-nt paired-read prefix criterion was used to identify sequence-level duplicate pairs.
-
-Because the library does not contain UMIs, these reads are described as **putative PCR duplicates**, rather than experimentally verified molecular duplicates.
-
-### 2. Quality control
-
-Reads were processed with **fastp** using quality trimming and filtering criteria including:
-
-- Phred quality threshold: 20
-- sliding-window trimming
-- maximum low-quality base fraction: 40%
-- maximum ambiguous bases: 5
-- minimum retained read length: 50 bp
-
-### 3. Human-read removal
-
-Quality-controlled reads were mapped against **GRCh38** using Bowtie2 in `--very-sensitive` mode.
-
-Only paired reads for which both mates remained unmapped were retained for downstream analysis.
-
-### 4. De novo assembly
-
-Nonhuman reads were assembled using **MEGAHIT** with multiple k-mer sizes.
-
-Contigs ≥1 kb were retained for viral discovery.
-
-### 5. Viral discovery
-
-Contigs were screened with **geNomad**.
-
-Candidate viral contigs belonging to GastroCap-targeted viral families were retained for target-focused analysis.
-
-### 6. Target identification
-
-Candidate viral contigs were compared against public nucleotide reference sequences.
-
-Target identification integrated evidence from:
-
-- geNomad viral classification
-- nucleotide sequence similarity
-- contig-level read-back support
-
-### 7. Competitive reference mapping
-
-A curated target reference panel was constructed from complete or near-complete public viral sequences.
-
-Capture reads were competitively mapped against the reference panel.
-
-Reference-level metrics included:
-
-- mapped reads
-- proper-pair fragments
-- breadth ≥1×
-- breadth ≥5×
-- breadth ≥10×
-- mean depth
-- MAPQ ≥20 breadth and depth
-
-### 8. Consensus reconstruction
-
-Targets selected for genome reconstruction were remapped independently to their corresponding references to reduce competition between related references.
-
-Variants were called with **bcftools**.
-
-Consensus bases required:
-
-- mapping quality ≥20
-- base quality ≥20
-- depth ≥10×
-
-Positions below 10× depth were masked as `N`.
-
-### 9. Genotype and phylogenetic placement
-
-Classical human astrovirus typing focused on the **ORF2 capsid region**.
-
-Sample and public reference sequences were aligned with **MAFFT**, and exploratory phylogenetic placement was performed using **FastTree** under a GTR+Gamma model.
-
-### 10. Diagnostic oligonucleotide mismatch surveillance
-
-Published human astrovirus RT-qPCR primer/probe sequences were compared in silico against reconstructed viral sequences.
-
-The analysis distinguishes:
-
-- internal primer mismatches
-- primer 3′-terminal mismatches
-- probe mismatches
-- uncallable consensus positions
-
-This analysis evaluates **sequence compatibility only** and does not directly establish experimental PCR sensitivity or assay failure.
+The proprietary GastroCap capture-probe sequences are not publicly available and are **not analyzed in this repository**.
 
 ---
 
-## Key results
+# Multisample workflow
 
-### Preprocessing and assembly
+## 1. Putative PCR duplicate removal
 
-Starting from **199,495 raw read pairs**:
+Raw paired-end reads are deduplicated with **CD-HIT-DUP** before read trimming.
 
-| Stage | Read pairs |
-|---|---:|
-| Raw | 199,495 |
-| After putative PCR deduplication | 198,528 |
-| After QC | 188,573 |
-| After human-read removal | 188,573 |
+A paired-read sequence-prefix criterion is used to remove duplicated read pairs.
 
-Assembly produced:
+Because the sequencing libraries do not contain unique molecular identifiers (UMIs), removed reads are described as:
 
-- **1,597 contigs ≥500 bp**
-- **1,183,881 bp** total assembly length
-- **42,702 bp** maximum contig length
-- **673 bp** N50
-- **139 contigs ≥1 kb**
+> **putative PCR duplicates**
 
-Among the ≥1-kb contigs:
+rather than experimentally verified molecular duplicates.
 
-- **54** were classified as viral by geNomad
-- **18** were assigned to strict GastroCap target families
-- **1** additional contig was classified as an unresolved Picornavirales candidate
+---
+
+## 2. Read quality control
+
+Deduplicated reads are processed using **fastp**.
+
+The workflow applies quality trimming and filtering before host-read removal.
+
+Formal preprocessing follows:
+
+```text
+raw reads
+→ putative PCR deduplication
+→ fastp
+→ human-read removal
+```
+
+---
+
+## 3. Human-read removal
+
+Quality-controlled reads are mapped against the human **GRCh38** reference using Bowtie2.
+
+Only paired reads remaining nonhuman are retained for downstream assembly and viral analysis.
+
+Across the eight analyzed libraries, human alignment was negligible under the validated workflow.
+
+---
+
+## 4. De novo assembly
+
+Nonhuman paired-end reads are assembled independently with **MEGAHIT**.
+
+Contigs ≥1 kb are retained for downstream viral classification.
+
+This preserves an assembly-first viral-discovery component rather than relying exclusively on reference mapping.
+
+---
+
+## 5. Viral classification
+
+Contigs ≥1 kb are screened with **geNomad**.
+
+The validated workflow uses the pinned image:
+
+```text
+community.wave.seqera.io/library/genomad:1.12.0--27836e6e665e84b5
+```
+
+Contigs assigned to the target viral families are retained for downstream analysis.
+
+Across the eight samples, this produced:
+
+- **237 strict target-family viral contigs**
+
+---
+
+## 6. Assembly-supported read-back
+
+Candidate viral contigs are mapped back against the corresponding nonhuman reads.
+
+The formal assembly-supported high-confidence criterion is:
+
+```text
+breadth ≥ 95%
+AND
+mean depth ≥ 10×
+```
+
+Using this criterion:
+
+- **136 contigs** were supported across the eight libraries.
+
+This step is described as an:
+
+> **assembly-supported high-confidence detection criterion**
+
+It is not treated as an independent validation experiment.
+
+---
+
+## 7. Within-family sequence clustering
+
+The 136 supported target contigs are pooled across samples and clustered **within viral families** using CD-HIT-EST.
+
+Clustering uses:
+
+```text
+95% nucleotide identity
+80% shorter-sequence coverage
+reverse-complement matching enabled
+```
+
+The analysis produced:
+
+- **136 supported contigs**
+- **96 sequence clusters**
+
+These clusters are used for sequence dereplication and competitive mapping.
+
+**The 96 sequence clusters should not be interpreted as 96 viral species or 96 individual viruses.**
+
+---
+
+## 8. Viral nucleotide annotation
+
+One representative sequence from each cluster is compared against a local NCBI viral nucleotide database.
+
+The annotation workflow uses:
+
+```text
+megablast
+→ annotation triage
+→ sensitive blastn for non-strong matches
+```
+
+All 96 cluster representatives obtained interpretable viral nucleotide matches under the final workflow.
+
+Annotation confidence labels such as `strong` and `moderate` are **workflow triage categories**, not formal species or genotype thresholds.
+
+---
+
+## 9. Competitive all-cluster mapping
+
+All cluster representatives are combined into a competitive reference panel.
+
+Reads from each sample are mapped against the complete panel using Bowtie2.
+
+Mapping evidence is summarized using:
+
+- properly paired fragments;
+- MAPQ ≥20 reads;
+- breadth ≥1×;
+- breadth ≥10×;
+- mean depth;
+- fragments per million input fragments (FPM).
+
+FPM is interpreted as:
+
+> **normalized sequencing support**
+
+and **not as unbiased viral abundance**, because hybrid capture alters relative read representation.
+
+---
+
+## 10. Evidence tiers
+
+For each sequence cluster and sample, evidence is summarized descriptively.
+
+The workflow distinguishes:
+
+```text
+ASSEMBLY
+HIGH_BREADTH_MAPPING
+PARTIAL_MAPPING
+LOCAL_MAPPING
+NONE
+```
+
+These categories describe the strength and distribution of sequencing evidence.
+
+They are **not diagnostic positivity thresholds**.
+
+---
+
+## 11. Taxonomy reconciliation
+
+geNomad family assignments are retained alongside nucleotide-reference evidence.
+
+Where strong nucleotide evidence conflicts with the original geNomad family classification, both the original and reconciled classifications are preserved.
+
+For example, several contigs originally assigned to Picornaviridae were reconciled to Caliciviridae after strong nucleotide matches to sapovirus or norovirus sequences.
+
+This preserves the distinction between:
+
+- original computational classification;
+- reference-based taxonomic interpretation.
+
+---
+
+## 12. Biological grouping
+
+Closely related sequence clusters are subsequently organized into biologically interpretable groups or genome segments.
+
+The full analysis produced:
+
+- **51 biological groups / genome segments**
+
+These groups are analytical units for cross-sample evidence integration.
+
+They should **not be interpreted directly as viral richness**.
+
+---
+
+## 13. Portfolio evidence matrix
+
+Nine reference-like or unresolved biological groups were removed from the presentation-focused matrix because they were not central to interpretation of the human enteric viral signal.
+
+The final portfolio matrix contains:
+
+- **42 biological groups / segments**
+- **8 wastewater capture libraries**
+
+The full underlying evidence tables remain available in `results_summary/`.
+
+---
+
+## Multisample evidence heatmap
+
+The main portfolio output summarizes assembly and mapping evidence across the eight capture libraries.
+
+![Multisample enteric viral evidence heatmap](figures/multisample/portfolio_enteric_evidence_heatmap.png)
+
+Evidence colors represent discrete evidence categories rather than continuous abundance.
+
+---
+
+# Single-sample genome reconstruction
+
+The anchor library `ERR14788990` was additionally used for deeper sequence reconstruction and interpretation.
+
+The single-sample branch includes:
+
+```text
+target detection
+→ reference selection
+→ independent reference mapping
+→ consensus reconstruction
+→ genotype / phylogenetic analysis
+→ diagnostic primer/probe mismatch analysis
+```
 
 ---
 
@@ -215,9 +387,13 @@ Several human enteric viral targets showed strong reference-guided support.
 
 ---
 
-## Multiple HAstV-1 sequence populations
+## Two HAstV-1 sequence populations
 
-Independent assembly, competitive mapping, consensus reconstruction, and ORF2 phylogenetic analysis supported the presence of **at least two genetically distinct HAstV-1 sequence populations**.
+Independent assembly, competitive mapping, reference-guided reconstruction, and ORF2 phylogenetic analysis supported:
+
+> **two phylogenetically distinct HAstV-1 sequence populations**
+
+The terminology `population A` and `population B` is used as an analysis label and does not imply an official lineage designation.
 
 Two assembled contigs showed reciprocal reference specificity:
 
@@ -226,15 +402,13 @@ Two assembled contigs showed reciprocal reference specificity:
 | `k141_843` | 99.08% | 88.97% |
 | `k141_1995` | 90.56% | 99.64% |
 
-The reconstructed HAstV-1 ORF2 sequences shared only:
+The reconstructed HAstV-1 ORF2 sequences shared approximately:
 
 - **1,997 comparable nucleotide sites**
 - **1,802 matches**
 - **90.24% nucleotide identity**
 
-Population A was dominant and nearly completely reconstructed.
-
-Population B showed substantially lower read support and was only partially reconstructed, but phylogenetic analysis placed it within a distinct HAstV-1 public-sequence cluster.
+Population A was nearly completely reconstructed, whereas population B showed lower sequencing support and partial reconstruction.
 
 ---
 
@@ -248,9 +422,9 @@ The HAstV-3 consensus showed:
 - mean depth: **255.6×**
 - high-confidence reference-relative SNPs: **15**
 
-The reconstructed ORF2 sequence showed **99.75% nucleotide identity** to `MN444721.1`.
+The reconstructed ORF2 sequence showed approximately **99.75% nucleotide identity** to `MN444721.1`.
 
-ORF2 phylogenetic placement supported classification as **HAstV-3**.
+Phylogenetic placement supported classification as HAstV-3.
 
 ---
 
@@ -265,17 +439,44 @@ Rotavirus A segment 3 showed:
 - callable sequence: **83.64%**
 - masked positions: **424 bp**
 
-This sequence is therefore treated as a **partial high-confidence segment consensus**, rather than a near-complete segment reconstruction.
+The sequence is therefore interpreted as a **partial high-confidence segment consensus**, rather than a near-complete segment reconstruction.
 
 ---
 
-## Diagnostic oligonucleotide compatibility
+## Phylogenetic analysis
 
-Two published classical human astrovirus RT-qPCR assay designs were evaluated in silico.
+Classical human astrovirus typing focuses on the **ORF2 capsid region**.
 
-Summary:
+Sample and public reference sequences were aligned using MAFFT, followed by exploratory phylogenetic analysis with FastTree.
 
-| Sample | Assay | Best forward primer mismatches | Reverse mismatches | Probe mismatches | Primer 3′ mismatches |
+FastTree node-support values are treated as **local support values**, not conventional bootstrap percentages.
+
+---
+
+# Diagnostic oligonucleotide mismatch surveillance
+
+Published classical human astrovirus diagnostic RT-qPCR primer/probe sequences were compared in silico against reconstructed viral sequences.
+
+The analysis distinguishes:
+
+- internal primer mismatches;
+- primer 3′-terminal mismatches;
+- probe mismatches;
+- uncallable consensus positions.
+
+This analysis evaluates:
+
+> **in-silico sequence compatibility**
+
+and does not establish experimental PCR sensitivity, amplification efficiency, or diagnostic assay failure.
+
+No proprietary GastroCap capture-bait sequence is included in this analysis.
+
+---
+
+## Example diagnostic compatibility results
+
+| Sample | Assay | Forward mismatches | Reverse mismatches | Probe mismatches | Primer 3′ mismatches |
 |---|---|---:|---:|---:|---:|
 | HAstV1_A | BCCDC classical HAstV | 1 | 0 | 1 | 0 |
 | HAstV1_A | Classic HAstV Japan | 1 | 0 | 0 | 0 |
@@ -286,148 +487,257 @@ Summary:
 
 No primer 3′-terminal mismatches were observed in the evaluated sequences.
 
-Notably, the divergent HAstV1_B population remained fully compatible with the forward, reverse, and probe oligonucleotides of one evaluated classical HAstV assay despite substantial ORF2 divergence from HAstV1_A.
-
-The BCCDC HAstV probe contained two mismatches against the HAstV-3 consensus.
-
-These results illustrate that overall viral sequence divergence does not necessarily predict divergence at diagnostic oligonucleotide binding sites.
+These results illustrate that overall genome divergence does not necessarily predict divergence at diagnostic oligonucleotide binding sites.
 
 ---
 
-## Repository structure
+# Reproducible execution
+
+The main multisample workflow is orchestrated with **Snakemake**.
+
+The validated workflow used:
+
+```text
+Snakemake 7.32.4
+```
+
+Software versions are documented in:
+
+```text
+docs/software_versions.md
+```
+
+Environment and database requirements are described in:
+
+```text
+docs/environment.md
+```
+
+A reference plotting environment is provided in:
+
+```text
+workflow/envs/plotting.yaml
+```
+
+---
+
+## Quick start
+
+Clone the repository:
+
+```bash
+git clone https://github.com/qihuang627-creator/wastewater-capture-viromics.git
+cd wastewater-capture-viromics
+```
+
+Install or configure the required external software and databases described in:
+
+```text
+docs/environment.md
+```
+
+Inspect the workflow without executing jobs:
+
+```bash
+snakemake \
+  --cores 8 \
+  --dry-run \
+  --rerun-triggers mtime
+```
+
+Run the workflow:
+
+```bash
+snakemake \
+  --cores 8 \
+  --rerun-triggers mtime
+```
+
+If the default Python interpreter does not contain the required plotting packages, specify a compatible interpreter:
+
+```bash
+export PLOT_PYTHON=/path/to/python
+
+snakemake \
+  --cores 8 \
+  --rerun-triggers mtime
+```
+
+---
+
+## Reproducibility validation
+
+The completed Snakemake DAG was tested by deliberately deleting the final portfolio matrix and heatmap outputs and allowing Snakemake to regenerate them.
+
+The regenerated:
+
+- TSV matrix was **byte-identical** to the original;
+- PNG heatmap was **byte-identical** to the original;
+- PDF had different binary metadata but **identical rendered content**.
+
+This validates dependency tracking through the final presentation-level output.
+
+---
+
+# Repository structure
 
 ```text
 .
 ├── README.md
+├── Snakefile
 ├── LICENSE
+├── CITATION.cff
 ├── .gitignore
 │
-├── scripts/
-│   ├── 03_dedup_raw.sh
-│   ├── 04_host_removal.sh
-│   ├── 05_assembly.sh
-│   ├── 06_target_readback_mapping.sh
-│   ├── 07_fetch_target_references.sh
-│   ├── 08_reference_mapping.sh
-│   ├── 09_consensus_target.sh
-│   └── 10_primer_probe_mismatch_v2.py
+├── config/
+│   └── multisample/
+│       ├── samples.tsv
+│       ├── workflow.yaml
+│       └── run_lists/
 │
-├── docs/
-│   ├── 01_workflow.md
-│   ├── 02_methods.md
-│   └── 03_results.md
+├── metadata/
+│   └── single_sample/
+│
+├── scripts/
+│   ├── single_sample/
+│   └── multisample/
 │
 ├── refs/
-│   └── diagnostic_assays/
-│       └── astrovirus_public_assays.tsv
+│   ├── common/
+│   ├── single_sample/
+│   └── multisample/
 │
 ├── results_summary/
-│   ├── preprocessing_summary.tsv
-│   ├── reference_mapping_summary.tsv
-│   ├── consensus_summary.tsv
-│   ├── hastv_population_summary.tsv
-│   └── diagnostic_mismatch_summary.tsv
+│   └── multisample/
 │
-└── environment/
-    └── software_versions.txt
+├── figures/
+│   └── multisample/
+│
+├── docs/
+│   ├── environment.md
+│   └── software_versions.md
+│
+└── workflow/
+    └── envs/
+        └── plotting.yaml
 ```
 
-Large sequencing files, BAM files, databases, reference indices, and intermediate analysis outputs are intentionally excluded from the repository.
+Large raw sequencing files, reference databases, alignment files, QC outputs, and intermediate analysis directories are intentionally excluded from version control.
 
 ---
 
-## Main software
+# Key output files
 
-The workflow uses:
+Important multisample outputs include:
 
-- fastp
+```text
+results_summary/multisample/supported_target_contigs.tsv
+results_summary/multisample/supported_sequence_clusters.tsv
+results_summary/multisample/all96_annotation_master.tsv
+results_summary/multisample/all96_annotation_reconciled.tsv
+results_summary/multisample/all96_evidence_master.tsv
+results_summary/multisample/biological_group_evidence_matrix.tsv
+results_summary/multisample/portfolio_enteric_group_matrix.tsv
+```
+
+Main figure:
+
+```text
+figures/multisample/portfolio_enteric_evidence_heatmap.png
+```
+
+---
+
+# Interpretation cautions
+
+Several aspects of the workflow are intentionally described conservatively.
+
+1. **Duplicate removal**
+
+   Without UMIs, duplicate reads are described as *putative PCR duplicates*.
+
+2. **Assembly-supported detection**
+
+   Read-back support is an assembly-supported high-confidence criterion, not an independent validation experiment.
+
+3. **Capture sequencing**
+
+   Hybrid enrichment alters read representation. FPM therefore represents normalized sequencing support rather than unbiased viral abundance.
+
+4. **Sequence clusters**
+
+   The 96 within-family sequence clusters are dereplication units and should not be interpreted as 96 viral species.
+
+5. **Biological groups**
+
+   The 51 biological groups / genome segments are analytical units and should not be interpreted directly as viral richness.
+
+6. **Evidence tiers**
+
+   Evidence categories are descriptive and are not clinical or diagnostic positivity thresholds.
+
+7. **Reference host names**
+
+   Viral reference titles containing host terms such as rodent, canine, or porcine do not by themselves establish the biological host origin of wastewater sequences.
+
+8. **Phylogenetic support**
+
+   FastTree support values are local support values rather than conventional bootstrap percentages.
+
+9. **Diagnostic mismatch analysis**
+
+   Primer/probe mismatch analysis evaluates sequence compatibility only and does not establish experimental assay performance.
+
+10. **Capture probes**
+
+    Proprietary GastroCap probe sequences are not publicly available and are not evaluated in this repository.
+
+---
+
+# Software
+
+Major tools used in the validated analysis include:
+
+- Snakemake
 - CD-HIT-DUP
+- fastp
 - Bowtie2
-- samtools
-- bcftools
+- SAMtools
 - MEGAHIT
 - geNomad
+- CD-HIT-EST
 - NCBI BLAST+
 - MAFFT
 - FastTree
-- Python 3
+- bcftools
+- Python
+- matplotlib
+- NumPy
 
-Exact software versions used for this analysis are recorded in:
+Exact versions used in the validated workflow are listed in:
 
-```text
-environment/software_versions.txt
-```
-
----
-
-## Important methodological notes
-
-### Putative PCR duplicates
-
-Sequence-level deduplication was performed using a 150-nt paired-read prefix criterion.
-
-Because the sequencing library does not contain UMIs, duplicate calls should not be interpreted as experimentally confirmed PCR duplicates.
-
-### Hybrid-capture abundance
-
-Hybrid capture changes the relative representation of viral targets.
-
-Therefore, normalized mapped-fragment counts are interpreted as **normalized sequencing support**, not as absolute viral abundance in the original wastewater sample.
-
-### Consensus interpretation
-
-Consensus genomes represent the dominant nucleotide state among sufficiently supported reads.
-
-They should not be interpreted as evidence that only one viral strain was present in the sample.
-
-### Phylogenetic interpretation
-
-FastTree analyses were used for exploratory genotype and within-genotype sequence placement.
-
-FastTree internal-node values are interpreted as **local support values**, not conventional bootstrap replicates.
-
-### Diagnostic mismatch interpretation
-
-Primer/probe mismatch analysis evaluates sequence compatibility only.
-
-A mismatch does not by itself demonstrate reduced assay sensitivity, increased Ct values, or diagnostic failure.
-
-### Capture probes
-
-The GastroCap capture-bait sequences are proprietary and were not evaluated.
-
-Diagnostic oligonucleotide analysis was restricted to publicly available primer/probe sequences.
+[`docs/software_versions.md`](docs/software_versions.md)
 
 ---
 
-## Reproducibility
+# License
 
-Core scripts are organized in approximate workflow order under `scripts/`.
+This repository is released under the **MIT License**.
 
-Additional documentation is available in:
-
-- [`docs/01_workflow.md`](docs/01_workflow.md)
-- [`docs/02_methods.md`](docs/02_methods.md)
-- [`docs/03_results.md`](docs/03_results.md)
-
-Compact analysis outputs are provided under:
-
-- [`results_summary/`](results_summary/)
-
-Raw sequencing data can be retrieved independently from the corresponding public sequencing archive using the accession information above.
+See [`LICENSE`](LICENSE).
 
 ---
 
-## Scope
+# Citation
 
-This repository is intended as a focused demonstration of **hybrid-capture wastewater viromics and sequence-resolved viral surveillance**.
+Citation information for this repository is provided in:
 
-It is not intended to serve as a validated clinical diagnostic pipeline.
+[`CITATION.cff`](CITATION.cff)
 
 ---
 
-## Author
+# Author
 
-**Qi Huang**
+**Qi Huang, PhD**
 
-Environmental biotechnology · wastewater viromics · microbial genomics · multi-omics · bioinformatics
+Environmental biotechnology · wastewater viromics · microbial ecology · multi-omics · data-driven environmental bioprocesses
